@@ -1,0 +1,45 @@
+/* src/styles/base/_tokens.scss */
+
+/* =========================================
+  DESIGN TOKENS
+  Fonte única da verdade do design system
+========================================= */
+
+:root {
+
+  /* COLORS */
+  --color-blue-1: #205691;
+  --color-blue-2: #122F97;
+  --color-blue-3: #00AAFF;
+  --color-blue-4: #1D4ED8;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-grey-1: #E9EEF4;
+  --color-grey-2: #CBCBCB;
+  --color-red: #FD7267;
+
+  --color-text-main: var(--color-blue-2);
+  --color-text-footer: var(--color-black);
+  --color-text-cta: var(--color-white);
+  --color-text-deals: var(--color-blue-1);
+
+  --color-link: var(--color-white);
+  --color-link-hover: var(--color-blue-3);
+
+  --color-background-main: var(--color-white);
+  --color-background-header: var(--color-blue-1);
+  --color-background-footer: var(--color-grey-1);
+  --color-background-button-register: var(--color-red);
+  --color-background-button-register-hover: var(--color-blue-1);
+  --color-background-button-primary: var(--color-blue-1);
+  --color-background-button-secondary: var(--color-white);
+
+  --color-border-login: var(--color-blue-3);
+  --color-border-division: var(--color-grey-2);
+  --color-border-button: var(--color-blue-1);
+
+
+  /* BORDER RADIUS */
+  --radius: 1rem;
+  --radius-login: 50%;
+}

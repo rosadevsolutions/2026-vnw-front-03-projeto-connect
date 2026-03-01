@@ -6,7 +6,7 @@
 ---
 
 ## Tecnologias Utilizadas
-Linguagem de Programação/Superset JS: [TypeScript](https://www.typescriptlang.org/)<br>
+Linguagem de Programação: [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)<br>
 Framework JS: [React](https://react.dev/)<br>
 Pré-processador CSS: [Sass](https://sass-lang.com/)<br>
 Ambiente de Execução: [Node JS](https://nodejs.org/pt-br)<br>
@@ -19,8 +19,8 @@ Builder: [Vite](https://vite.dev/)
 
 ### Instalação e Inicialização do Projeto
 Através do terminal de sua escolha:
-1) Download/Clonar o projeto para o seu dispositivo: [Repositório Remoto do Projeto](https://github.com/rosadevsolutions/desafio-vnw-connect)
+1) Download/Clonar o projeto para o seu dispositivo: [Repositório Remoto do Projeto](https://github.com/rosadevsolutions/2026-vnw-front-03-projeto-connect)
 2) Acessar o projeto: Acesse a pasta raiz na qual o projeto foi clonado
-3) Instalar dependências de desenvolvimento: Digitar no terminal o comando npm install
-4) Inicializar/Rodar o servidor de desenvolvimento do projeto: Digitar no terminal o comando npm run dev
+3) Instalar dependências de desenvolvimento: Digitar no terminal o comando `npm install`
+4) Inicializar/Rodar o servidor de desenvolvimento do projeto: Digitar no terminal o comando `npm run dev`
 5) Visualizar o projeto: Acessar o link gerado após inicializar o projeto. Copie o link e abra em seu navegador de preferência

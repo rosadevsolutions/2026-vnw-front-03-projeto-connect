@@ -1,0 +1,156 @@
+/* =========================================================
+  MODERN CSS RESET
+  Otimizado para React + Sass
+  Baseado em Andy Bell, Josh Comeau e CSS Remedy
+   ========================================================= */
+
+/* 1. Box sizing mais previsível */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* 2. Remove margens padrão */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-optical-sizing: auto;
+  font-size: 62.5%;
+  font-style: normal;
+}
+
+/* 3. Melhor renderização de texto */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* 4. Base do body */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-size: 100%;
+  line-height: 1;
+  list-style-type: none;
+
+  /* melhora renderização de fontes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Melhor comportamento de mídia */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Remove estilos padrão de formulários */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 7. Evita overflow em textos longos */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Remove estilos padrão de listas quando usadas como UI */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* 9. Remove estilos padrão de links quando classe aplicada */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+}
+
+/* 10. Melhor comportamento de botões */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 11. Root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 12. Scroll suave opcional para usuários sem restrição */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* 13. Remove animações para usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+}
+
+/* 14. Inputs não estouram container */
+input,
+textarea {
+  max-width: 100%;
+}
+
+/* 15. Remove outline apenas quando não for focus-visible */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* 16. Focus acessível */
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}

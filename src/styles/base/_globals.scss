@@ -1,0 +1,17 @@
+/* src/styles/base/_globals.scss */
+body {
+  background: var(--color-background-main);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+
+/* Container padrão */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
