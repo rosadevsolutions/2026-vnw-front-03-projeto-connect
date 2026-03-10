@@ -1,7 +1,13 @@
+import Footer from './components/shared/Footer'
+import Header from './components/shared/Header'
+import Main from './components/shared/Main'
+
 export default function App() {
   return (
     <>
-      <h1>App</h1>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }
