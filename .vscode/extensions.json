@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "burkeholland.simple-react-snippets",
+    "dsznajder.es7-react-js-snippets",
+    "ritwickdey.live-sass",
+    "naumovs.color-highlight",
+    "formulahendry.auto-rename-tag",
+    "oderwat.indent-rainbow",
+  ]
+}
