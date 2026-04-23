@@ -1,4 +1,11 @@
+// Base
 @use './base/reset';
-@use './base/tokens';
 @use './base/typography';
 @use './base/globals';
+
+@use './tokens/colors';
+@use './tokens/fonts';
+@use './tokens/spacing';
+@use './tokens/borders';
+
+@use './abstracts/mixins';
