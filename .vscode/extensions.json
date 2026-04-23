@@ -4,8 +4,9 @@
     "burkeholland.simple-react-snippets",
     "dsznajder.es7-react-js-snippets",
     "ritwickdey.live-sass",
+    "stylelint.vscode-stylelint",
+    "oderwat.indent-rainbow",
     "naumovs.color-highlight",
     "formulahendry.auto-rename-tag",
-    "oderwat.indent-rainbow",
   ]
 }
