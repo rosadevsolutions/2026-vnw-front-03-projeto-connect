@@ -1,0 +1,9 @@
+@use "../../../../styles/abstracts/mixins" as *;
+
+$brand-logo-url: "../../../../assets/icons/logo-connect.svg";
+$brand-logo-width: 8.7rem;
+$brand-logo-height: 6.57rem;
+
+.brand-logo {
+  @include image-replacement($brand-logo-url, $brand-logo-width, $brand-logo-height);
+}

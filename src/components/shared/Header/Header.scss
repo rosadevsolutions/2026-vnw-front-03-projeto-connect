@@ -1,0 +1,23 @@
+@use "../../../styles/abstracts/mixins" as *;
+
+$header-width: 100vw;
+$header-height: 10rem;
+$header-background: var(--color-blue-1);
+
+
+.header{
+  &__wrapper{
+    width: $header-width;
+    height: $header-height;
+    background-color: $header-background;
+    @include flex-center-center;
+  }
+
+  &__content{
+    width: 100vw;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    @include flex-around-center;
+  }
+}
