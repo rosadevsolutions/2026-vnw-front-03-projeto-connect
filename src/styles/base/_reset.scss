@@ -67,8 +67,8 @@ h6 {
 }
 
 /* 8. Remove estilos padrão de listas quando usadas como UI */
-ul[role='list'],
-ol[role='list'] {
+ul li,
+ol li {
   list-style: none;
 }
 
