@@ -1,6 +1,9 @@
 @use "../../../../styles/abstracts/mixins" as *;
 
-$navigation-link-width: 65.3rem;
+$navigation-link-color: var(--color-white);
+$navigation-link-hover-color: var(--color-red);
+$navigation-link-text-size: 1.6rem;
+$navigation-link-text-weight: var(--font-regular);
 
 .navigation{
   &__wrapper{
@@ -12,17 +15,17 @@ $navigation-link-width: 65.3rem;
 
   &__link{
     display: block;
-    color: var(--color-white);
+    color: $navigation-link-color;
     transition: color 0.3s ease;
 
     &:hover{
-      color: var(--color-red);
+      color: $navigation-link-hover-color;
     }
   }
 
   &__text{
-    font-size: 1.6rem;
-    font-weight: var(--font-regular);
+    font-size: $navigation-link-text-size;
+    font-weight: $navigation-link-text-weight;
     letter-spacing: 0.05rem;
   }
 }
