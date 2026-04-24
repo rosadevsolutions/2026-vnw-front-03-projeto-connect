@@ -1,7 +1,7 @@
 import Footer from './components/shared/Footer'
 import Header from './components/shared/Header/Header'
 import Main from './components/shared/Main'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Mentoria from "./pages/Mentoria/Mentoria";
 import Doacao from "./pages/Doacao/Doacao";
@@ -14,7 +14,6 @@ export default function App() {
   return (
     <>
       <Header />
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mentoria" element={<Mentoria />} />
@@ -23,7 +22,6 @@ export default function App() {
           <Route path="/voluntariado" element={<Voluntariado />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
     </>
   )
