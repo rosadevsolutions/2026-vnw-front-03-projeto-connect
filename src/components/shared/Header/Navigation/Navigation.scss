@@ -1,0 +1,28 @@
+@use "../../../../styles/abstracts/mixins" as *;
+
+$navigation-link-width: 65.3rem;
+
+.navigation{
+  &__wrapper{
+    width: 65.3rem;
+    height: 4rem;
+    gap: 4rem;
+    @include flex-center-center
+  }
+
+  &__link{
+    display: block;
+    color: var(--color-white);
+    transition: color 0.3s ease;
+
+    &:hover{
+      color: var(--color-red);
+    }
+  }
+
+  &__text{
+    font-size: 1.6rem;
+    font-weight: var(--font-regular);
+    letter-spacing: 0.05rem;
+  }
+}
