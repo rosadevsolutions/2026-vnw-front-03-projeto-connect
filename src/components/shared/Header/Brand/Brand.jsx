@@ -3,9 +3,13 @@ import { Link } from "react-router-dom"
 
 export default function Brand() {
   return (
-    <Link to="/" aria-label="Home">
+    <Link
+      to="/"
+      aria-label="Home"
+      className="brand__link"
+    >
       <h1
-        className="brand-logo"
+        className="brand__logo"
         title="Connect"
       >
         Connect
