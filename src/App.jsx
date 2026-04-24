@@ -9,19 +9,18 @@ import EventosPalestras from "./pages/EventosPalestras/EventosPalestras";
 import Voluntariado from "./pages/Voluntariado/Voluntariado";
 import NotFound from "./pages/NotFound/NotFound";
 
-
 export default function App() {
   return (
     <>
       <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/mentoria" element={<Mentoria />} />
-          <Route path="/doacao" element={<Doacao />} />
-          <Route path="/eventos-palestras" element={<EventosPalestras />} />
-          <Route path="/voluntariado" element={<Voluntariado />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/mentoria" element={<Mentoria />} />
+        <Route path="/doacao" element={<Doacao />} />
+        <Route path="/eventos-palestras" element={<EventosPalestras />} />
+        <Route path="/voluntariado" element={<Voluntariado />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </>
   )
