@@ -1,5 +1,8 @@
 import "./Header.scss"
-import Brand from "../Header/Brand/Brand"
+import Brand from "./Brand/Brand"
+import Navigation from "./Navigation/Navigation";
+import LogIn from "./LogIn/LogIn";
+
 
 export default function Header() {
   return (
@@ -9,10 +12,10 @@ export default function Header() {
           <Brand />
         </div>
         <div className="header__navigation">
-          Navigation
+          <Navigation />
         </div>
         <div className="header__login">
-          Login
+          <LogIn />
         </div>
       </div>
     </header>
