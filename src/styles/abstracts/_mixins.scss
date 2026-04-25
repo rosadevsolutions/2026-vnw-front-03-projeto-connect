@@ -1,3 +1,5 @@
+$content-max-width: 1240px;
+
 @mixin flex-center-center{
   display: flex;
   justify-content: center;
@@ -16,14 +18,46 @@
   align-items: center;
 }
 
+@mixin flex-col-end{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 @mixin image-replacement($img-url, $width, $height) {
   background-image: url('#{$img-url}');
-  background-repeat: no-repeat;
   width: $width;
   height: $height;
+  background-repeat: no-repeat;
 
   // Hide text from view
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@mixin wrapper{
+  @include flex-center-center;
+  width: 100vw;
+}
+
+@mixin content{
+  @include flex-between-center;
+  width: 100vw;
+  max-width: $content-max-width;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@mixin link-style($color, $color-hover, $font-size, $font-weight) {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+
+  &:hover {
+    color: $color-hover;
+  }
 }
