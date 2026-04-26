@@ -1,0 +1,11 @@
+@use "../../../styles/abstracts/mixins" as *;
+
+.main{
+  &__wrapper{
+    @include wrapper;
+  }
+
+  &__content{
+    @include content;
+  }
+}
