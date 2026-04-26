@@ -16,7 +16,7 @@ export default function Footer() {
             </h5>
           </Link>
           <p className="footer__text">
-            &copy; 2026 - Connet | Todos os direitos reservados.
+            &copy; 2026 - Vai na Web e EMpower | Todos os direitos reservados.<br/>Projeto destinado exclusivamente a fins educativos
           </p>
         </div>
         <div className="footer__areas">
