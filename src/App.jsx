@@ -1,12 +1,12 @@
-import Footer from './components/shared/Footer'
+import Footer from './components/shared/Footer/Footer'
+import Main from './components/shared/Main/Main'
 import Header from './components/shared/Header/Header'
-import AppRoutes from './routes/AppRoutes'
 
 export default function App() {
   return (
     <>
       <Header />
-      <AppRoutes />
+      <Main />
       <Footer />
     </>
   )
