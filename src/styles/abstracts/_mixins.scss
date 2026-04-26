@@ -12,9 +12,27 @@ $content-max-width: 1240px;
   align-items: center;
 }
 
+@mixin flex-start-center{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin flex-around-center{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-col-start{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin flex-col-center{
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -24,13 +42,13 @@ $content-max-width: 1240px;
   align-items: flex-end;
 }
 
-@mixin image-replacement($img-url, $width, $height) {
+@mixin image-replacement($img-url) {
+  display: block;
   background-image: url('#{$img-url}');
-  width: $width;
-  height: $height;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
-
-  // Hide text from view
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -47,7 +65,7 @@ $content-max-width: 1240px;
   max-width: $content-max-width;
   height: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 @mixin link-style($color, $color-hover, $font-size, $font-weight) {
