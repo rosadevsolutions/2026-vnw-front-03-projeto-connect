@@ -10,9 +10,9 @@ export default function LogIn() {
 
   return (
     <div className="login__wrapper">
-      <div className="login__image-container">
+      <div className="login__image--container">
         <img
-          className="login__image-thumbnail"
+          className="login__image--thumbnail"
           src={loginThumbnail}
           alt="foto do usuário"
           onClick={() => setIsOpen(!isOpen)}

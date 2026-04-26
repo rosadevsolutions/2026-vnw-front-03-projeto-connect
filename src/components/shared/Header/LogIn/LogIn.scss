@@ -13,11 +13,11 @@ $login-menu-button-font-weight: 700;
 
 .login{
   &__image{
-    &-container{
+    &--container{
       width: 5.4rem;
       height: 5.4rem;
     }
-    &-thumbnail{
+    &--thumbnail{
       width: 100%;
       height: 100%;
       border-radius: 50%;

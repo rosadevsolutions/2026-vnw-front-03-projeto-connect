@@ -5,7 +5,7 @@
     @include wrapper;
   }
 
-  &__content{
-    @include content;
+  &__container{
+    @include container;
   }
 }

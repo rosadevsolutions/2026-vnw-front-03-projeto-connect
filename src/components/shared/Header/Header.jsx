@@ -7,7 +7,7 @@ import LogIn from "./LogIn/LogIn";
 export default function Header() {
   return (
     <header className="header__wrapper">
-      <div className="header__content">
+      <div className="header__container">
         <div className="header__brand">
           <Brand />
         </div>

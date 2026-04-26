@@ -4,7 +4,7 @@ import "./Footer.scss"
 export default function Footer() {
   return (
     <footer className="footer__wrapper">
-      <div className="footer__content">
+      <div className="footer__container">
         <div className="footer__copyright">
           <Link
             to="/"

@@ -11,7 +11,7 @@ $header-wrapper-height: 8.5rem;
     height: $header-wrapper-height;
   }
 
-  &__content{
-    @include content;
+  &__container{
+    @include container;
   }
 }

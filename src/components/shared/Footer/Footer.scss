@@ -15,8 +15,8 @@ $footer-link-logo-ensino: "../../../assets/icons/logo-vainaweb.svg";
     bottom: 0;
   }
 
-  &__content{
-    @include content;
+  &__container{
+    @include container;
     height: 8rem;
     padding: 0 4rem;
   }
