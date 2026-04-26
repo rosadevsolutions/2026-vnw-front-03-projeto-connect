@@ -11,11 +11,6 @@ $brand-logo-url: "../../../../assets/icons/logo-connect.svg";
     height: $brand-link-height;
   }
   &__logo {
-    background-size: contain;
-    @include image-replacement(
-      $brand-logo-url,
-      100%,
-      100%
-    );
+    @include image-replacement($brand-logo-url);
   }
 }
