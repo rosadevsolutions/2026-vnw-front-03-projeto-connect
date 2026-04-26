@@ -73,6 +73,14 @@ $footer-link-logo-ensino: "../../../assets/icons/logo-vainaweb.svg";
   }
 
   &__logo{
+    &-copyright,
+    &-dev,
+    &-ensino,
+    &-apoio{
+      opacity: .85;
+      transition: opacity 0.3s ease;
+      &:hover{opacity: 1;}
+    }
     &-copyright{
       @include image-replacement($footer-link-logo-copyright);
     }
