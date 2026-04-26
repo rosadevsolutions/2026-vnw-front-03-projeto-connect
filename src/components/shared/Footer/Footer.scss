@@ -1,0 +1,89 @@
+@use "../../../styles/abstracts/mixins" as *;
+
+$footer-wrapper-bg: var(--color-grey-2);
+$footer-text-color: var(--color-blue-1);
+$footer-link-logo-copyright: "../../../assets/icons/logo-connect-alternativa.svg";
+$footer-link-logo-dev: "../../../assets/icons/logo-rosadev.png";
+$footer-link-logo-apoio: "../../../assets/icons/logo-empower.svg";
+$footer-link-logo-ensino: "../../../assets/icons/logo-vainaweb.svg";
+
+.footer{
+  &__wrapper{
+    @include wrapper;
+    background-color: $footer-wrapper-bg;
+    position: fixed;
+    bottom: 0;
+  }
+
+  &__content{
+    @include content;
+    height: 8rem;
+    padding: 0 4rem;
+  }
+
+  &__copyright{
+    @include flex-start-center;
+    gap: 0.5rem;
+  }
+
+  &__areas{
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  &__area{
+    @include flex-col-center;
+    gap: 0.4rem;
+  }
+
+  &__text{
+    font-weight: var(--font-semibold);
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    color: $footer-text-color;
+  }
+
+  &__logos{
+    @include flex-start-center;
+  }
+
+  &__link{
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      height: 3rem;
+    }
+    &-copyright{
+      height: 3rem;
+      width: 4.1rem;
+    }
+    &-dev{
+      height: 2.8rem;
+      width: 4.6rem;
+    }
+    &-ensino{
+      height: 3rem;
+      width: 4.4rem;
+    }
+    &-apoio{
+      height: 2.5rem;
+      width: 8.2rem;
+    }
+  }
+
+  &__logo{
+    &-copyright{
+      @include image-replacement($footer-link-logo-copyright);
+    }
+    &-dev{
+      @include image-replacement($footer-link-logo-dev);
+    }
+    &-ensino{
+      @include image-replacement($footer-link-logo-ensino);
+    }
+    &-apoio{
+      @include image-replacement($footer-link-logo-apoio);
+    }
+  }
+}
