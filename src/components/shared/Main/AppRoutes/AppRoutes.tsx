@@ -14,7 +14,7 @@ export default function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/mentoria" element={<Mentoria />} />
       <Route path="/doacao" element={<Doacao />} />
-      <Route path="/eventos-palestras" element={<EventosPalestras />} />
+      <Route path="/eventos-e-palestras" element={<EventosPalestras />} />
       <Route path="/voluntariado" element={<Voluntariado />} />
       <Route path="/perfil-do-usuario" element={<PerfilUsuario />} />
       <Route path="/configuracoes-da-conta" element={<ConfiguracoesConta />} />
