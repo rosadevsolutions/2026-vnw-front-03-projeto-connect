@@ -13,6 +13,15 @@ export default function Card({
 
   const isComposed = variant === "composed";
 
+  function formatText(text) {
+    return text.split("**").map((part, index) =>
+      index % 2 === 1
+      ? <strong key={index}>{part}</strong>
+      : part
+    );
+  }
+
+
   return (
     <div className="card__wrapper">
       {isComposed ? (
@@ -34,7 +43,7 @@ export default function Card({
 
           {description && (
             <Card.Text>
-              {description}
+              {formatText(description)}
             </Card.Text>
           )}
 

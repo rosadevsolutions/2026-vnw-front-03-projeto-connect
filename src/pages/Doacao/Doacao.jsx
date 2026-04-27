@@ -2,7 +2,7 @@ import Section from "../../components/shared/Section/Section";
 import Card from "../../components/shared/Card/Card";
 import { images } from "@/assets/images";
 
-export default function Mentoria() {
+export default function Doacao() {
   const sectionTitle = "Doação";
   const cardCtaSection = "Quero doar";
 
@@ -18,7 +18,7 @@ export default function Mentoria() {
       id: 2,
       alt: "Livros organizados para doação",
       title: "Projeto \nFuturo na Escola",
-      description: "Doe livros, cadernos, lápis, mochilas e \ncanetas para ajudar jovens a continuarem \nseus estudos com mais estrutura",
+      description: "Doe livros, cadernos, lápis, \nborrachas, canetas e mochilas \npara ajudar jovens a continuarem \nseus estudos com mais estrutura.",
       image: "doacao-projeto-futuro-escola.png",
     },
     {
