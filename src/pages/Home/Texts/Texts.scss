@@ -1,0 +1,25 @@
+@use "../../../styles/abstracts/mixins" as *;
+
+.home{
+  &__text{
+    &--title,
+    &--paragraph{
+      color: var(--color-blue-1);
+      letter-spacing: 0.01rem;
+    }
+
+    &--title{
+      font-family: var(--font-base);
+      font-size: 7.6rem;
+      line-height: 1.2;
+      width: 59rem;
+    }
+
+    &--paragraph{
+      font-family: var(--font-texts);
+      font-size: 2rem;
+      line-height: 1.4;
+      width: 56rem;
+    }
+  }
+}

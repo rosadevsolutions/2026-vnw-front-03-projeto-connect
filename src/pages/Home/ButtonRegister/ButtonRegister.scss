@@ -1,0 +1,22 @@
+@use "../../../styles/abstracts/mixins" as *;
+
+$button-bg: var(--color-red);
+$button-bg-transition: var(--color-blue-1);
+$button-color: var(--color-white);
+$button-width: 26rem;
+$button-height: 5.6rem;
+$button-font-size: 2rem;
+
+.home{
+  &__button{
+    @include flex-center-center;
+    @include hover-transition-bg($button-bg,$button-bg-transition);
+    color: $button-color;
+    width: $button-width;
+    height: $button-height;
+    font-size: $button-font-size;
+    gap: 1rem;
+    font-weight: var(--font-semibold);
+    border-radius: .4rem;
+  }
+}

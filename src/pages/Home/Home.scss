@@ -1,0 +1,30 @@
+@use "../../styles/abstracts/mixins" as *;
+
+.home{
+  &__wrapper{
+    @include wrapper;
+  }
+
+  &__container{
+    @include container;
+    align-items: flex-start;
+  }
+
+  &__content{
+    @include flex-col-start;
+    justify-content: space-between;
+    height: 60rem;
+    padding-top: 10rem;
+
+    &--top{
+      @include flex-col-start;
+      justify-content: space-between;
+      height: 36rem;
+    }
+
+    &--bottom{
+      @include flex-between-center;
+      width: 100%;
+    }
+  }
+}

@@ -42,6 +42,14 @@ $content-max-width: 1240px;
   align-items: flex-end;
 }
 
+@mixin hover-transition-bg($button-bg,$button-bg-transition) {
+  background-color: $button-bg;
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: $button-bg-transition;
+  }
+}
+
 @mixin image-replacement($img-url) {
   display: block;
   background-image: url('#{$img-url}');
