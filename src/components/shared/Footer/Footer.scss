@@ -6,6 +6,8 @@ $footer-link-logo-copyright: "../../../assets/icons/logo-connect-alternativa.svg
 $footer-link-logo-dev: "../../../assets/icons/logo-rosadev.png";
 $footer-link-logo-apoio: "../../../assets/icons/logo-empower.svg";
 $footer-link-logo-ensino: "../../../assets/icons/logo-vainaweb.svg";
+$logo-opacity: .85;
+$logo-opacity-transition: 1;
 
 .footer{
   &__wrapper{
@@ -78,9 +80,7 @@ $footer-link-logo-ensino: "../../../assets/icons/logo-vainaweb.svg";
     &-dev,
     &-ensino,
     &-apoio{
-      opacity: .85;
-      transition: opacity 0.3s ease;
-      &:hover{opacity: 1;}
+      @include hover-transition-opacity($logo-opacity, $logo-opacity-transition);
     }
     &-copyright{
       @include image-replacement($footer-link-logo-copyright);

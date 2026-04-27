@@ -42,11 +42,27 @@ $content-max-width: 1240px;
   align-items: flex-end;
 }
 
+@mixin hover-transition-color($link-color,$link-color-transition) {
+  color: $link-color;
+  transition: color 0.3s ease;
+  &:hover{
+    color: $link-color-transition;
+  }
+}
+
 @mixin hover-transition-bg($button-bg,$button-bg-transition) {
   background-color: $button-bg;
   transition: background-color 0.3s ease;
   &:hover{
     background-color: $button-bg-transition;
+  }
+}
+
+@mixin hover-transition-opacity($logo-opacity,$logo-opacity-transition) {
+  opacity: $logo-opacity;
+  transition: opacity 0.3s ease;
+  &:hover{
+    opacity: $logo-opacity-transition;
   }
 }
 
