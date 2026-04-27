@@ -1,32 +1,32 @@
 import Section from "../../components/shared/Section/Section";
 import Card from "../../components/shared/Card/Card";
+import { images } from "@/assets/images";
 
 export default function Mentoria() {
-  const sectionTitle = "Mentoria"
+  const sectionTitle = "Mentoria";
+  const sectionCardCta = "Quero participar";
+
   const cards = [
     {
       id: 1,
-      alt: "",
-      title: "Mentoria de Carreira e Emprego",
-      description: "Orientação sobre currículo, entrevistas e primeiros passos no mercado de trabalho.",
-      image: "src/assets/images/mentoria-carreira-emprego.png",
-      cta: "Quero participar",
+      alt: "Pessoa recebendo orientação de carreira durante reunião com especialista",
+      title: "Mentoria de \nCarreira e Emprego",
+      description: "Orientação sobre currículo, \nentrevistas e primeiros passos \nno mercado de trabalho.",
+      image: "mentoria-carreira-emprego.png",
     },
     {
       id: 2,
-      alt: "",
+      alt: "Grupo em conversa trocando experiências pessoais e profissionais",
       title: "Compartilhe Experiências",
-      description: "Oriente profissionais iniciantes em sua área.",
-      image: "src/assets/images/mentoria-compartilhe-experiencia.png",
-      cta: "Quero participar"
+      description: "Oriente iniciantes e jovens em \nsua área de atuação profissional.",
+      image: "mentoria-compartilhe-experiencias.png",
     },
     {
       id: 3,
-      alt: "",
-      title: "Guia para Aprendizagem",
-      description: "Participe como guia em jornadas de aprendizado e desenvolvimento.",
-      image: "src/assets/images/mentoria-acompanhamento.png",
-      cta: "Quero participar"
+      alt: "Mentor orientando um hjovem profissional em atividade no notebook",
+      title: "Guia para \nAprendizagem",
+      description: "Participe como guia em jornadas \nde aprendizado e desenvolvimento.",
+      image: "mentoria-acompanhamento.png",
     },
   ];
 
@@ -37,7 +37,8 @@ export default function Mentoria() {
       renderItem={(item) => (
         <Card
           key={item.id} {...item}
-          onClick={() => console.log(item.id)}
+          cta={sectionCardCta}
+          onClick={() => alert(`${sectionCardCta}\n\n${item.title}.`)}
         />
       )}
     />
