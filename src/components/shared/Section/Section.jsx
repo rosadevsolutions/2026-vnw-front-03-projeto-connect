@@ -1,6 +1,6 @@
 import "./Section.scss";
 
-export default function Section({title,children}) {
+export default function Section({title,items = [], renderItem}) {
   return (
     <section className="section__wrapper">
       <div className="section__container">
@@ -8,7 +8,7 @@ export default function Section({title,children}) {
           {title}
         </h3>
         <div className="section__card--list">
-          {children}
+          {items.map((item, index) => renderItem(item, index))}
         </div>
       </div>
     </section>
