@@ -1,4 +1,5 @@
 import "./Card.scss"
+import { images } from "@/assets/images";
 
 export default function Card({
   children,
@@ -7,13 +8,10 @@ export default function Card({
   description,
   cta,
   onClick,
-  variant = "auto", // "auto" | "composed"
+  variant = "auto",
 }) {
 
   const isComposed = variant === "composed";
-  const handleClick = () => {
-    alert(`Quero participar de ${title}`);
-  };
 
   return (
     <div className="card__wrapper">
@@ -21,11 +19,27 @@ export default function Card({
         children
       ) : (
         <>
-          {image && <Card.Image src={image} alt={title} />}
-          {title && <Card.Title>{title}</Card.Title>}
-          {description && <Card.Text>{description}</Card.Text>}
+          {image && (
+            <Card.Image
+              image={image}
+              alt={title}
+            />
+          )}
+
+          {title && (
+            <Card.Title>
+              {title}
+            </Card.Title>
+          )}
+
+          {description && (
+            <Card.Text>
+              {description}
+            </Card.Text>
+          )}
+
           {cta && (
-            <Card.CTA onClick={handleClick}>
+            <Card.CTA onClick={onClick}>
               {cta}
             </Card.CTA>
           )}
@@ -35,10 +49,10 @@ export default function Card({
   );
 }
 
-Card.Image = ({ src, alt }) => (
+Card.Image = ({ image, alt }) => (
   <img
     className="card__image"
-    src={src}
+    src={images[image]}
     alt={alt}
   />
 );
@@ -56,7 +70,10 @@ Card.Text = ({ children }) => (
 );
 
 Card.CTA = ({ children, onClick }) => (
-  <button className="card__button" onClick={onClick}>
+  <button
+    className="card__button"
+    onClick={onClick}
+  >
     {children}
   </button>
 );
