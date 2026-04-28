@@ -8,19 +8,47 @@ import PerfilUsuario from "../../../../pages/PerfilUsuario/PerfilUsuario";
 import NotFound from "../../../../pages/NotFound/NotFound";
 
 const routes = [
-  { path: "/", element: <Home /> },
-  { path: "/mentoria", element: <Mentoria /> },
-  { path: "/doacao", element: <Doacao /> },
-  { path: "/eventos-e-palestras", element: <EventosPalestras /> },
-  { path: "/voluntariado", element: <Voluntariado /> },
-  { path: "/perfil-do-usuario", element: <PerfilUsuario /> },
+  {
+    id: 1,
+    path: "/",
+    element: <Home />
+  },
+  {
+    id: 2,
+    path: "/mentoria",
+    element: <Mentoria />
+  },
+  {
+    id: 3,
+    path: "/doacao",
+    element: <Doacao />
+  },
+  {
+    id: 4,
+    path: "/eventos-e-palestras",
+    element: <EventosPalestras />
+  },
+  {
+    id: 5,
+    path: "/voluntariado",
+    element: <Voluntariado />
+  },
+  {
+    id: 6,
+    path: "/perfil-do-usuario",
+    element: <PerfilUsuario />
+  },
 ];
 
 export default function AppRoutes() {
   return (
     <Routes>
-      {routes.map((route, index) => (
-        <Route key={index} {...route} />
+      {routes.map((route) => (
+        <Route
+          key={route.id}
+          path={route.path}
+          element={route.element}
+        />
       ))}
       <Route
         path="*"
