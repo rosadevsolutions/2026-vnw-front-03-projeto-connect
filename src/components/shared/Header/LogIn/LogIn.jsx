@@ -5,8 +5,23 @@ import './LogIn.scss';
 
 const userName = "Romulo Rosa";
 
+const links = [
+  {
+    id: 1,
+    label: "Perfil do Usuário",
+    to: "/perfil-do-usuario"
+  },
+  {
+    id: 2,
+    label: "Voluntariado",
+    to: "/voluntariado"
+  },
+];
+
 export default function LogIn() {
   const [isOpen, setIsOpen] = useState(false);
+  const toggleDropdown = () => setIsOpen(prev => !prev);
+  const handleLogout = () => { console.log('Sair') };
 
   return (
     <div className="login__wrapper">
@@ -15,39 +30,40 @@ export default function LogIn() {
           className="login__image--thumbnail"
           src={loginThumbnail}
           alt="foto do usuário"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={toggleDropdown}
         />
       </div>
 
       {isOpen && (
         <div className="login__dropdown">
-          <p className="login__user-name">{userName}</p>
+          <p className="login__user-name">
+            {userName}
+          </p>
+
           <ul className="login__menu">
-            <li className='login__menu-item'>
-              <Link
-                className='login__menu-link'
-                to="/perfil-do-usuario"
+            {links.map((link) => (
+              <li
+                key={link.id}
+                className="login__menu-item"
               >
-                Perfil do Usuário
-              </Link>
-            </li>
-            <li className='login__menu-item'>
-              <Link
-                className='login__menu-link'
-                to="/voluntariado"
-              >
-                Voluntariado
-              </Link>
-            </li>
+                <Link
+                  className="login__menu-link"
+                  to={link.to}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
+
           <button
-            className='login__menu-button'
-            onClick={() => console.log('Sair')}
+            className="login__menu-button"
+            onClick={handleLogout}
           >
             Sair
           </button>
         </div>
       )}
     </div>
-  )
+  );
 }
