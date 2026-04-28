@@ -26,17 +26,17 @@ export default function LogIn() {
             <li className='login__menu-item'>
               <Link
                 className='login__menu-link'
-                to="/voluntariado"
+                to="/perfil-do-usuario"
               >
-                Voluntariado
+                Perfil do Usuário
               </Link>
             </li>
             <li className='login__menu-item'>
               <Link
                 className='login__menu-link'
-                to="/configuracoes-da-conta"
+                to="/voluntariado"
               >
-                Configurações da conta
+                Voluntariado
               </Link>
             </li>
           </ul>

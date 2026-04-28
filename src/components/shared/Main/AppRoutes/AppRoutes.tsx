@@ -5,7 +5,6 @@ import Doacao from "../../../../pages/Doacao/Doacao";
 import EventosPalestras from "../../../../pages/EventosPalestras/EventosPalestras";
 import Voluntariado from "../../../../pages/Voluntariado/Voluntariado";
 import PerfilUsuario from "../../../../pages/PerfilUsuario/PerfilUsuario";
-import ConfiguracoesConta from "../../../../pages/ConfiguracoesConta/ConfiguracoesConta";
 import NotFound from "../../../../pages/NotFound/NotFound";
 
 export default function AppRoutes() {
@@ -17,7 +16,6 @@ export default function AppRoutes() {
       <Route path="/eventos-e-palestras" element={<EventosPalestras />} />
       <Route path="/voluntariado" element={<Voluntariado />} />
       <Route path="/perfil-do-usuario" element={<PerfilUsuario />} />
-      <Route path="/configuracoes-da-conta" element={<ConfiguracoesConta />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
