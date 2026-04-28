@@ -3,6 +3,7 @@ import "./Areas.scss";
 
 const areas = [
   {
+    id: 1,
     label: "Tecnologia",
     url: "https://www.linkedin.com/in/rosadevsolutions/",
     name: "Rosadev Solutions",
@@ -10,6 +11,7 @@ const areas = [
     logoClass: "footer__logo-dev",
   },
   {
+    id: 2,
     label: "Ensino",
     url: "https://vainaweb.com.br/",
     name: "Vai na Web",
@@ -17,6 +19,7 @@ const areas = [
     logoClass: "footer__logo-ensino",
   },
   {
+    id: 3,
     label: "Apoio",
     url: "https://empowerweb.org/",
     name: "EMpower",
@@ -31,7 +34,7 @@ export default function Areas() {
       {areas.map((area) => (
         <div
           className="footer__area"
-          key={area.name}
+          key={area.id}
         >
           <p className="footer__text">
             {area.label}:
