@@ -2,25 +2,26 @@
 
 $navigation-link-color: var(--color-white);
 $navigation-link-hover-color: var(--color-red);
-$navigation-link-text-size: 1.6rem;
+$navigation-link-text-size: 2rem;
 $navigation-link-text-weight: var(--font-regular);
 
 .navigation{
   &__wrapper{
-    width: 65.3rem;
+    @include flex-between-center;
+    width: 76rem;
     height: 4rem;
     gap: 4rem;
-    @include flex-center-center
   }
 
   &__link{
-    display: block;
     @include hover-transition-color($navigation-link-color, $navigation-link-hover-color);
+    display: block;
   }
 
   &__text{
+    font-family: var(--font-base);
     font-size: $navigation-link-text-size;
     font-weight: $navigation-link-text-weight;
-    letter-spacing: 0.05rem;
+    letter-spacing: .15rem;
   }
 }

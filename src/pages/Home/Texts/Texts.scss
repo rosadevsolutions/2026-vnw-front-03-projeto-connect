@@ -4,7 +4,7 @@
   &__text{
     &--title,
     &--paragraph{
-      color: var(--color-blue-1);
+      color: var(--color-blue);
       letter-spacing: 0.01rem;
     }
 
@@ -13,6 +13,7 @@
       font-size: 7.6rem;
       line-height: 1.2;
       width: 59rem;
+      text-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.25);
     }
 
     &--paragraph{

@@ -1,41 +1,36 @@
 @use "../../../../styles/abstracts/mixins" as *;
 
-$footer-text-color: var(--color-blue-1);
-$footer-link-logo-copyright: "../../../../assets/icons/logo-connect-alternativa.svg";
+$footer-text-color: var(--color-blue);
+$footer-link-logo-copyright: "../../../../assets/icons/logo-connect-alternativa.svg?react";
 $logo-opacity: .85;
 $logo-opacity-transition: 1;
 
 .footer{
   &__copyright{
-    @include flex-start-center;
-    gap: 0.5rem;
-  }
+    &--wrapper{
+      @include flex-start-center;
+      gap: .5rem;
+    }
 
-  &__text{
-    font-weight: var(--font-semibold);
-    font-size: 1.4rem;
-    letter-spacing: 0.05rem;
-    line-height: 1.2;
-    color: $footer-text-color;
-  }
-
-  &__logos{
-    @include flex-start-center;
-  }
-
-  &__link{
-    &-copyright{
+    &--link{
       height: 3rem;
       width: 4.1rem;
     }
-  }
 
-  &__logo{
-    &-copyright{
+    &--logo{
       @include hover-transition-opacity($logo-opacity, $logo-opacity-transition);
     }
-    &-copyright{
+    &--logo{
       @include image-replacement($footer-link-logo-copyright);
+    }
+
+    &--text{
+      font-family: var(--font-texts);
+      font-weight: var(--font-regular);
+      font-size: 1.2rem;
+      letter-spacing: .03rem;
+      line-height: 1.4;
+      color: $footer-text-color;
     }
   }
 }

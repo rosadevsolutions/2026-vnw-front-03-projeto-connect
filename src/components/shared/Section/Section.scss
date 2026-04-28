@@ -12,10 +12,11 @@
   }
 
   &__title{
-    color: var(--color-blue-1);
+    color: var(--color-blue);
     font-family: var(--font-base);
     font-weight: var(--font-bold);
     font-size: 5.6rem;
+    text-shadow: 0 .3rem .05rem rgba(0, 0, 0, 0.2);
   }
 
   &__card{

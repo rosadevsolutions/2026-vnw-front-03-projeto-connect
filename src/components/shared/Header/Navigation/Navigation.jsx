@@ -26,7 +26,7 @@ const links = [
   {
     id: 4,
     to: "/eventos-e-palestras",
-    label: "Eventos e Palestras",
+    label: "Eventos & Palestras",
     linkClass: "navigation__link",
     spanClass: "navigation__text"
   },

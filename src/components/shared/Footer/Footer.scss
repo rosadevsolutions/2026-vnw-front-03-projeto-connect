@@ -1,6 +1,6 @@
 @use "../../../styles/abstracts/mixins" as *;
 
-$footer-wrapper-bg: var(--color-grey-2);
+$footer-wrapper-bg: var(--color-grey);
 
 .footer{
   &__wrapper{

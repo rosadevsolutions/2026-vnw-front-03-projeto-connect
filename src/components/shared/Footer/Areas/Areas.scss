@@ -1,16 +1,15 @@
 @use "../../../../styles/abstracts/mixins" as *;
 
-$footer-text-color: var(--color-blue-1);
+$footer-text-color: var(--color-blue);
 $footer-link-logo-dev: "../../../../assets/icons/logo-rosadev.png";
-$footer-link-logo-apoio: "../../../../assets/icons/logo-empower.svg";
-$footer-link-logo-ensino: "../../../../assets/icons/logo-vainaweb.svg";
+$footer-link-logo-apoio: "../../../../assets/icons/logo-empower.svg?react";
+$footer-link-logo-ensino: "../../../../assets/icons/logo-vainaweb.svg?react";
 $logo-opacity: .85;
 $logo-opacity-transition: 1;
 
 .footer{
   &__areas{
-    display: flex;
-    align-items: flex-start;
+    @include flex-start-center;
     gap: 3rem;
   }
 
@@ -20,9 +19,10 @@ $logo-opacity-transition: 1;
   }
 
   &__text{
-    font-weight: var(--font-semibold);
-    font-size: 1.4rem;
-    letter-spacing: 0.05rem;
+    font-family: var(--font-texts);
+    font-weight: var(--font-regular);
+    font-size: 1.2rem;
+    letter-spacing: 0.08rem;
     line-height: 1.2;
     color: $footer-text-color;
   }
@@ -33,8 +33,7 @@ $logo-opacity-transition: 1;
 
   &__link{
     &-wrapper{
-      display: flex;
-      align-items: center;
+      @include flex-center-center;
       height: 3rem;
     }
     &-dev{
