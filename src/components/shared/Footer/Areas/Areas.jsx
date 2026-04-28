@@ -10,9 +10,11 @@ export default function Areas() {
         </p>
         <div className="footer__link-wrapper">
           <Link
-          to="https://www.linkedin.com/in/rosadevsolutions/"
-          className="footer__link-dev"
-          title="Rosadev Solutions"
+            to="https://www.linkedin.com/in/rosadevsolutions/"
+            className="footer__link-dev"
+            title="Rosadev Solutions"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <h5 className="footer__logo-dev">
               Rosadev Solutions
@@ -29,6 +31,8 @@ export default function Areas() {
           to="https://vainaweb.com.br/"
           className="footer__link-ensino"
           title="Vai na Web"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <h5 className="footer__logo-ensino">
             Vai na Web
@@ -45,6 +49,8 @@ export default function Areas() {
           to="https://empowerweb.org/"
           className="footer__link-apoio"
           title="EMpower"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <h5 className="footer__logo-apoio">
             EMpower
