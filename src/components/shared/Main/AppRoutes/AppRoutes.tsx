@@ -7,16 +7,25 @@ import Voluntariado from "../../../../pages/Voluntariado/Voluntariado";
 import PerfilUsuario from "../../../../pages/PerfilUsuario/PerfilUsuario";
 import NotFound from "../../../../pages/NotFound/NotFound";
 
+const routes = [
+  { path: "/", element: <Home /> },
+  { path: "/mentoria", element: <Mentoria /> },
+  { path: "/doacao", element: <Doacao /> },
+  { path: "/eventos-e-palestras", element: <EventosPalestras /> },
+  { path: "/voluntariado", element: <Voluntariado /> },
+  { path: "/perfil-do-usuario", element: <PerfilUsuario /> },
+];
+
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/mentoria" element={<Mentoria />} />
-      <Route path="/doacao" element={<Doacao />} />
-      <Route path="/eventos-e-palestras" element={<EventosPalestras />} />
-      <Route path="/voluntariado" element={<Voluntariado />} />
-      <Route path="/perfil-do-usuario" element={<PerfilUsuario />} />
-      <Route path="*" element={<NotFound />} />
+      {routes.map((route, index) => (
+        <Route key={index} {...route} />
+      ))}
+      <Route
+        path="*"
+        element={<NotFound />}
+      />
     </Routes>
-  )
+  );
 }
