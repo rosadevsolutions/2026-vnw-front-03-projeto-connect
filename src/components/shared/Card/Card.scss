@@ -43,7 +43,7 @@ $card_text-color: var(--color-blue);
   }
 
   &__button{
-    @include hover-transition-bg($button-bg,$button-bg-hover);
+    background-color: $button-bg;
     border-radius: var(--radius-2);
     color: var(--color-white);
     font-family: var(--font-base);
@@ -53,5 +53,15 @@ $card_text-color: var(--color-blue);
     width: 21rem;
     height: 5rem;
     box-shadow: .2rem .3rem .4rem rgba(0, 0, 0, .2);
+    transition: all 1s ease 0s;
+
+    &:hover{
+      background-color: $button-bg-hover;
+      transform: translateY(-1rem);
+    }
+
+    &:active{
+      transform: translateY(.5rem);
+    }
   }
 }

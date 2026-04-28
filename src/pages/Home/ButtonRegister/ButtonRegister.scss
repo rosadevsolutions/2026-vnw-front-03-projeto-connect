@@ -10,7 +10,6 @@ $button-font-size: 2rem;
 .home{
   &__button{
     @include flex-center-center;
-    @include hover-transition-bg($button-bg,$button-bg-transition);
     color: $button-color;
     width: $button-width;
     height: $button-height;
@@ -19,5 +18,17 @@ $button-font-size: 2rem;
     font-weight: var(--font-semibold);
     border-radius: var(--radius-1);
     box-shadow: .4rem .4rem .5rem rgba(0, 0, 0, 0.15);
+    background-color: $button-bg;
+    transition: all 0.6s ease 0s;
+    -webkit-transition: all 0.6s ease 0s;
+
+    &:hover{
+      background-color: $button-bg-transition;
+      transform: translateX(10px);
+    }
+
+    &:active{
+      transform: translateX(-5px);
+    }
   }
 }
