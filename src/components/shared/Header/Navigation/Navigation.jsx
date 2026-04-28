@@ -1,21 +1,51 @@
 import './Navigation.scss';
 import { Link } from "react-router-dom";
 
+const links = [
+  {
+    id: 1,
+    to: "/doacao",
+    label: "Doação",
+    linkClass: "navigation__link",
+    spanClass: "navigation__text"
+  },
+  {
+    id: 2,
+    to: "/voluntariado",
+    label: "Voluntariado",
+    linkClass: "navigation__link",
+    spanClass: "navigation__text"
+  },
+  {
+    id: 3,
+    to: "/mentoria",
+    label: "Mentoria",
+    linkClass: "navigation__link",
+    spanClass: "navigation__text"
+  },
+  {
+    id: 4,
+    to: "/eventos-e-palestras",
+    label: "Eventos e Palestras",
+    linkClass: "navigation__link",
+    spanClass: "navigation__text"
+  },
+];
+
 export default function Navigation() {
   return (
     <nav className="navigation__wrapper">
-      <Link className="navigation__link" to="/doacao">
-        <span className="navigation__text">Doação</span>
-      </Link>
-      <Link className="navigation__link" to="/voluntariado">
-        <span className="navigation__text">Voluntariado</span>
-      </Link>
-      <Link className="navigation__link" to="/mentoria">
-        <span className="navigation__text">Mentoria</span>
-      </Link>
-      <Link className="navigation__link" to="/eventos-e-palestras">
-        <span className="navigation__text">Eventos e Palestras</span>
-      </Link>
+      {links.map((link) => (
+        <Link
+          key={link.id}
+          className={link.linkClass}
+          to={link.to}
+        >
+          <span className={link.spanClass}>
+            {link.label}
+          </span>
+        </Link>
+      ))}
     </nav>
   );
 }
