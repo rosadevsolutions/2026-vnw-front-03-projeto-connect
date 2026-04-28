@@ -11,14 +11,14 @@ export default function EventosPalestras() {
       id: 1,
       alt: "Dinâmica em grupo com jovens orientados por professor em sala.",
       title: "Empoderando Jovens \npara o Futuro",
-      description: "**Atividade:** Palestra motivacional sobre \nliderança jovem e transformação social. \n\n**Impacto:** Inspirar adolescentes a \nse tornarem agentes de mudança \nem suas comunidades.",
+      description: "**Atividade:** Palestra motivacional sobre \nliderança jovem e transformação social. \n\n**Impacto:** Inspirar jovens a se\ntornarem agentes de mudança \nem suas comunidades.",
       image: "eventos-empoderando-jovens-futuro.png",
     },
     {
       id: 2,
       alt: "Aula prática de tecnologia com jovens em computadores e instrutor orientando.",
       title: "Tecnologia \nque Transforma",
-      description: "**Atividade:** Workshop de introdução à \nprogramação e inovação digital. \n\n**Impacto:** Preparar jovens para o \nmercado de trabalho \natravés da tecnologia.",
+      description: "**Atividade:** Workshop de introdução à \nprogramação e inovação digital. \n\n**Impacto:** Preparar jovens para \natuarem no mercado de trabalho \natravés da tecnologia.",
       image: "eventos-tecnologia-que-transforma.png",
     },
     {
