@@ -15,14 +15,14 @@ $logo-opacity-transition: 1;
 
   &__area{
     @include flex-col-center;
-    gap: 0.4rem;
+    gap: .4rem;
   }
 
   &__text{
     font-family: var(--font-texts);
     font-weight: var(--font-regular);
     font-size: 1.2rem;
-    letter-spacing: 0.08rem;
+    letter-spacing: .08rem;
     line-height: 1.2;
     color: $footer-text-color;
   }

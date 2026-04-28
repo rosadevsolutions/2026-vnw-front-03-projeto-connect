@@ -9,7 +9,7 @@ $header-wrapper-height: 8.5rem;
     @include flex-center-center;
     background-color: $header-wrapper-background;
     height: $header-wrapper-height;
-    box-shadow: 0 .2rem 0.8rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 .2rem .8rem rgba(0, 0, 0, .5);
   }
 
   &__container{

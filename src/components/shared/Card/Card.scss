@@ -48,9 +48,10 @@ $card_text-color: var(--color-blue);
     color: var(--color-white);
     font-family: var(--font-base);
     font-weight: var(--font-semibold);
-    font-size: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: .05rem;
     width: 21rem;
     height: 5rem;
-    box-shadow: .2rem .3rem .4rem rgba(0, 0, 0, 0.2);
+    box-shadow: .2rem .3rem .4rem rgba(0, 0, 0, .2);
   }
 }

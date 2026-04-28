@@ -15,7 +15,6 @@ $navigation-link-text-weight: var(--font-regular);
 
   &__link{
     @include hover-transition-color($navigation-link-color, $navigation-link-hover-color);
-    display: block;
   }
 
   &__text{
