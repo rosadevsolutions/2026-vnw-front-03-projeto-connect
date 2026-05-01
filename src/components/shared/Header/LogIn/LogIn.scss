@@ -1,68 +1,77 @@
-@use "../../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$login-dropdown-background: var(--color-blue);
-$login-username-color: var(--color-white);
-$login-menu-link-color: var(--color-white);
-$login-menu-link-color-hover: var(--color-red);
-$login-menu-link-font-size: 1.2rem;
-$login-menu-link-font-weight: var(--font-regular);
-$login-menu-button-color: var(--color-white);
-$login-menu-button-color-hover: var(--color-red);
-$login-menu-button-font-size: 1.2rem;
-$login-menu-button-font-weight: var(--font-bold);
+$login-dropdown-background: var(--c-blue);
+$login-username-color: var(--c-white);
+$login-menu-link-color: var(--c-white);
+$login-menu-link-color-hover: var(--c-red);
+$login-menu-link-font-size: var(--fs-base);
+$login-menu-link-font-weight: var(--fw-base);
+$login-menu-button-color: var(--c-white);
+$login-menu-button-color-hover: var(--c-red);
+$login-menu-button-font-size: var(--fs-base);
+$login-menu-button-font-weight: var(--fw-bold);
 
 .login{
+  &__wrapper{
+    position: relative;
+  }
   &__image{
     &--container{
-      width: 5.4rem;
       height: 5.4rem;
+      width:  5.4rem;
     }
     &--thumbnail{
-      width: 100%;
-      height: 100%;
-      border-radius: var(--radius-border);
-      border: .3rem solid var(--color-white);
+      border-radius: var(--br-img);
+      border:     .3rem solid var(--c-white);
       box-shadow: 0 .2rem .8rem rgba(0, 0, 0, .5);
-      cursor: pointer;
+      cursor:     pointer;
+      width:      100%;
     }
   }
 
   &__dropdown{
     @include flex-col-end;
-    position: absolute;
-    top: 8rem;
-    right: 1.5%;
     background-color: $login-dropdown-background;
+    border-radius: var(--br-sm);
     box-shadow: 0 .2rem .8rem rgba(0, 0, 0, .15);
+    gap: var(--g-base);
     padding: 1.6rem;
-    z-index: 10;
-    gap: 1.6rem;
-    border-radius: var(--radius-2);
+    position: absolute;
+    right: 0;
+    text-align: var(--ta-l);
+    top: 6rem;
+    width: 12rem;
   }
 
   &__user-name{
+    color:     $login-username-color;
     font-size: $login-menu-button-font-size;
-    font-weight: var(--font-bold);
-    color: $login-username-color;
-    letter-spacing: .02rem;
+    font-weight:    var(--fw-bold);
+    letter-spacing: var(--ls-base);
   }
 
   &__menu{
     @include flex-col-end;
-    font-size: 1.2rem;
-    letter-spacing: .02rem;
-    gap: 1rem;
+    font-size: var(--fs-xl);
+    gap: var(--g-base);
+    letter-spacing: var(--ls-base);
   }
 
   &__menu-link{
     @include link-style(
-      $login-menu-link-color, $login-menu-link-color-hover, $login-menu-link-font-size, $login-menu-link-font-weight
+      $login-menu-link-color,
+      $login-menu-link-color-hover,
+      $login-menu-link-font-size,
+      $login-menu-link-font-weight
     );
   }
 
   &__menu-button{
     @include link-style(
-      $login-menu-button-color, $login-menu-button-color-hover, $login-menu-button-font-size, $login-menu-button-font-weight
+      $login-menu-button-color,
+      $login-menu-button-color-hover,
+      $login-menu-button-font-size,
+      $login-menu-button-font-weight
     );
   }
 }

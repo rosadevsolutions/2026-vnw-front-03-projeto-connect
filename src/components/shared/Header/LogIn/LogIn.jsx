@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import loginThumbnail from '../../../../assets/images/user-thumbnail.jpg';
+import loginThumbnail from '@/assets/images/user-thumbnail.jpg';
 import './LogIn.scss';
 
 const userName = "Romulo Rosa";
