@@ -1,12 +1,13 @@
 {
   "recommendations": [
-    "editorconfig.editorconfig",
     "burkeholland.simple-react-snippets",
     "dsznajder.es7-react-js-snippets",
+    "editorconfig.editorconfig",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    "oderwat.indent-rainbow",
     "ritwickdey.live-sass",
     "stylelint.vscode-stylelint",
-    "oderwat.indent-rainbow",
-    "naumovs.color-highlight",
-    "formulahendry.auto-rename-tag",
+    "ue.alphabetical-sorter"
   ]
 }
