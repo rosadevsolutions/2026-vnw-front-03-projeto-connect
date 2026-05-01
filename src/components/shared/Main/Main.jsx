@@ -1,4 +1,4 @@
-import AppRoutes from '../../../components/shared/Main/AppRoutes/AppRoutes'
+import AppRoutes from '@/components/shared/Main/AppRoutes/AppRoutes'
 import "./Main.scss"
 
 export default function Main() {

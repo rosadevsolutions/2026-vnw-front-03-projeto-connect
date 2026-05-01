@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../../../../pages/Home/Home";
-import Mentoria from "../../../../pages/Mentoria/Mentoria";
-import Doacao from "../../../../pages/Doacao/Doacao";
-import EventosPalestras from "../../../../pages/EventosPalestras/EventosPalestras";
-import Voluntariado from "../../../../pages/Voluntariado/Voluntariado";
-import PerfilUsuario from "../../../../pages/PerfilUsuario/PerfilUsuario";
-import NotFound from "../../../../pages/NotFound/NotFound";
+import Home from "@/pages/Home/Home";
+import Mentoria from "@/pages/Mentoria/Mentoria";
+import Doacao from "@/pages/Doacao/Doacao";
+import EventosPalestras from "@/pages/EventosPalestras/EventosPalestras";
+import Voluntariado from "@/pages/Voluntariado/Voluntariado";
+import PerfilUsuario from "@/pages/PerfilUsuario/PerfilUsuario";
+import NotFound from "@/pages/NotFound/NotFound";
 
 const routes = [
   {

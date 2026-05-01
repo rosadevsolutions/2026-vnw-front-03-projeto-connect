@@ -1,14 +1,13 @@
-@use "../../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$brand-link-width: 6.1rem;
 $brand-link-height: 4.6rem;
-$brand-logo-url: "../../../../assets/icons/logo-connect.svg?react";
+$brand-link-width:  6.1rem;
+$brand-logo-url:    "@/assets/icons/logo-connect.svg?react";
 
 .brand{
   &__link{
-    display: block;
-    width: $brand-link-width;
     height: $brand-link-height;
+    width:  $brand-link-width;
   }
   &__logo {
     @include image-replacement($brand-logo-url);

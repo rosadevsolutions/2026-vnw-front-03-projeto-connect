@@ -22,11 +22,11 @@ html:focus-within {
 }
 
 body {
+  font-size: 100%;
+  line-height: var(--lh-xs);
+  list-style-type: none;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  font-size: 100%;
-  line-height: 1;
-  list-style-type: none;
 
   /* Melhora renderização de fontes */
   -webkit-font-smoothing: antialiased;
@@ -38,7 +38,7 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
+  display:   block;
   max-width: 100%;
 }
 
@@ -46,8 +46,8 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
   color: inherit;
+  font:  inherit;
 }
 
 p,
@@ -79,16 +79,16 @@ q:after {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
   cursor: pointer;
   display: block;
+  text-decoration: none;
 }
 
 button {
-  cursor: pointer;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 table {
@@ -122,6 +122,6 @@ textarea {
 
 /* Focus acessível */
 :focus-visible {
-  outline: 2px solid #2563eb;
+  outline: .02rem solid var(--c-blue);
   outline-offset: 2px;
 }

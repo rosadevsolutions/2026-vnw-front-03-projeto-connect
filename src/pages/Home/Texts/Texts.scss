@@ -1,25 +1,25 @@
-@use "../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
 .home{
   &__text{
     &--title,
     &--paragraph{
-      color: var(--color-blue);
-      letter-spacing: .01rem;
+      color: var(--c-blue);
+      letter-spacing: var(--ls-base);
     }
 
     &--title{
-      font-family: var(--font-base);
-      font-size: 7.6rem;
-      line-height: 1.2;
+      font-family: var(--ff-base);
+      font-size:   var(--fs-4xl);
+      line-height: var(--lh-base);
+      text-shadow: var(--ts-base);
       width: 59rem;
-      text-shadow: 0 .2rem .2rem rgba(0, 0, 0, .25);
     }
 
     &--paragraph{
-      font-family: var(--font-texts);
-      font-size: 2rem;
-      line-height: 1.4;
+      font-family: var(--ff-texts);
+      font-size:   var(--fs-md);
+      line-height: var(--lh-sm);
       width: 56rem;
     }
   }

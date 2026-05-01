@@ -1,4 +1,4 @@
-@use "../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
 .section{
   &__wrapper{
@@ -7,21 +7,21 @@
 
   &__container{
     @include flex-col-center;
+    gap: var(--g-md);
     padding: 8rem 0;
-    gap: 10rem
   }
 
   &__title{
-    color: var(--color-blue);
-    font-family: var(--font-base);
-    font-weight: var(--font-bold);
-    font-size: 5.6rem;
-    text-shadow: 0 .3rem .05rem rgba(0, 0, 0, .2);
+    color: var(--c-blue);
+    font-family: var(--ff-base);
+    font-size:   var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    text-shadow: var(--ts-base);
   }
 
   &__card{
     &--list{
-      display: flex;
+      @include flex-center-center;
     }
   }
 }

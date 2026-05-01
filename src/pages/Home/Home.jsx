@@ -1,6 +1,6 @@
 import "./Home.scss"
-import HomeBg from "../../assets/images/home-hero.png"
-import IconArrow from "../../assets/icons/icon-arrow.svg?react";
+import HomeBg from "@/assets/images/home-hero.png"
+import IconArrow from "@/assets/icons/icon-arrow.svg?react";
 import Texts from "./Texts/Texts";
 import ButtonRegister from "./ButtonRegister/ButtonRegister";
 import Metrics from "./Metrics/Metrics";

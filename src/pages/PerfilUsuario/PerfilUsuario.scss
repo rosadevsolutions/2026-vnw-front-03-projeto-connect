@@ -1,7 +1,7 @@
-@use "../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$link-color: var(--color-black);
-$link-color-transition: var(--color-red);
+$link-color: var(--c-black);
+$link-color-transition: var(--c-red);
 
 .perfilUsuario{
   &__wrapper{
@@ -17,17 +17,17 @@ $link-color-transition: var(--color-red);
 
   &__content{
     @include flex-center-center;
-    gap: 2rem;
+    gap: var(--g-base);
   }
 
   &__image{
     &--wrapper{
-      width: 30rem;
+      width:  30rem;
       height: 30rem;
     }
     &--thumbnail{
-      border: .8rem solid var(--color-red);
-      border-radius: var(--radius-border);
+      border: .8rem solid var(--c-red);
+      border-radius: var(--br-img);
       box-shadow: 0 .4rem .4rem rgba(0, 0, 0, .25);
       width: 100%;
       height: 100%;
@@ -40,65 +40,71 @@ $link-color-transition: var(--color-red);
     }
 
     &--user{
-      color: var(--color-blue);
-      font-family: var(--font-base);
-      font-size: 4rem;
+      color: var(--c-blue);
+      font-family: var(--fw-base);
+      font-size:   var(--fs-2xl);
       margin-bottom: .4rem;
     }
 
-    &--position{
-      color: var(--color-red);
-      font-family: var(--font-texts);
-      font-weight: var(--font-semibold);
-      font-size: 1.6rem;
-      margin-bottom: 1.8rem;
-    }
-
+    &--position,
     &--bio{
-      color: var(--color-black);
-      font-family: var(--font-texts);
-      font-weight: var(--font-regular);
-      opacity: .75;
-      font-size: 1.4rem;
-      letter-spacing: .05rem;
-      line-height: 1.3;
+      font-family: var(--ff-texts);
       margin-bottom: 1.8rem;
       max-width: 42rem;
     }
 
+    &--position{
+      color: var(--c-red);
+      font-weight: var(--fw-semi);
+      font-size:   var(--fs-sm);
+    }
+
+    &--bio{
+      color: var(--c-black);
+      font-weight: var(--fw-regular);
+      opacity:   .75;
+      font-size:   var(--fs-xs);
+      letter-spacing: var(--ls-xs);
+      line-height:    var(--lh-base);
+      max-width: 42rem;
+    }
+
     &--icons{
-      @include flex-start-center;
-      gap: 1.5rem;
+      @include flex-center-start;
+      gap: var(--g-base);
       margin-bottom: 2rem;
     }
 
     &--icon{
-      @include flex-start-center;
-      gap: .25rem;
-      font-family: var(--font-texts);
-      font-weight: var(--font-regular);
-      font-size: 1.2rem;
-      letter-spacing: .02rem;
+      @include flex-center-start;
+      font-family: var(--ff-texts);
+      font-size:   var(--fs-base);
+      font-weight: var(--fw-base);
+      gap: var(--g-xs);
+      letter-spacing: var(--ls-base);
     }
 
     &--email{
-      @include hover-transition-color($link-color,$link-color-transition);
+      @include hover-transition-color(
+        $link-color,
+        $link-color-transition
+      );
     }
 
     &--tags{
-      @include flex-start-center;
-      gap: .5rem;
+      @include flex-center-start;
+      gap: var(--g-xs);
     }
 
     &--tag{
       @include flex-center-center;
-      background-color: var(--color-red-25);
+      background-color: var(--c-rose);
+      border-radius:    var(--br-xs);
+      color:       var(--c-red);
+      font-size:   var(--fs-xs);
+      font-weight: var(--fw-semi);
+      letter-spacing:  var(--ls-xs);
       padding: .6rem 1rem;
-      border-radius: var(--radius-1);
-      color: var(--color-red);
-      font-weight: var(--font-semibold);
-      font-size: 1.4rem;
-      letter-spacing: .05rem;
     }
   }
 }

@@ -1,60 +1,59 @@
-@use "../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$button-bg: var(--color-blue);
-$button-bg-hover: var(--color-red);
-$card_text-color: var(--color-blue);
+$button-bg: var(--c-blue);
+$button-bg-hover: var(--c-red);
+$card_text-color: var(--c-blue);
 
 .card{
   &__wrapper{
     @include flex-col-center;
-    gap: 1.5rem;
-    height: 100%;
+    gap:     var(--g-base);
+    height:  100%;
     padding: 1rem 4rem;
 
     &:not(:last-child){
-      border-right: .1rem solid var(--color-grey);
+      border-right: .1rem solid var(--c-gray);
     }
   }
 
   &__title,
   &__text{
     color: $card_text-color;
+    text-align:  var(--ta-c);
     white-space: pre-line;
-    text-align: center;
+    width:       30rem;
   }
 
   &__title{
-    font-size: 3rem;
-    width: 30rem;
+    font-size:  var(--fs-xl);
     max-height: 6rem;
   }
 
   &__text{
-    font-family: var(--font-texts);
-    color: var(--color-black);
-    font-size: 1.4rem;
-    line-height: 1.2;
-    width: 30rem;
+    color: var(--c-gray-d);
+    font-family: var(--ff-texts);
+    font-size:   var(--fs-xs);
     height: 10rem;
+    line-height: var(--lh-base);
+    width: 30rem;
     > span {
-      font-weight: var(--font-semibold);
+      font-weight: var(--fw-semi);
     }
-    opacity: .5;
   }
 
   &__button{
     background-color: $button-bg;
-    border-radius: var(--radius-2);
-    color: var(--color-white);
-    font-family: var(--font-base);
-    font-weight: var(--font-semibold);
-    font-size: 1.6rem;
-    letter-spacing: .05rem;
-    width: 21rem;
-    height: 5rem;
-    box-shadow: .2rem .3rem .4rem rgba(0, 0, 0, .2);
-    transition: all 1s ease 0s;
+    border-radius:  var(--br-sm);
+    box-shadow:     .2rem .3rem .4rem rgba(0, 0, 0, .2);
+    color:          var(--c-white);
+    font-family:    var(--ff-base);
+    font-size:      var(--fs-sm);
+    font-weight:    var(--fw-semi);
+    height:         5rem;
+    letter-spacing: var(--ls-xs);
+    width:          21rem;
 
+    transition:     all 1s ease 0s;
     &:hover{
       background-color: $button-bg-hover;
       transform: translateY(-1rem);

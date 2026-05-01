@@ -1,5 +1,5 @@
-import Section from "../../components/shared/Section/Section";
-import Card from "../../components/shared/Card/Card";
+import Section from "@/components/shared/Section/Section";
+import Card from "@/components/shared/Card/Card";
 import { images } from "@/assets/images";
 
 export default function EventosPalestras() {

@@ -1,13 +1,13 @@
-@use "../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$footer-wrapper-bg: var(--color-grey);
+$footer-wrapper-bg: var(--c-gray);
 
 .footer{
   &__wrapper{
     @include wrapper;
     background-color: $footer-wrapper-bg;
-    position: fixed;
     bottom: 0;
+    position: fixed;
   }
 
   &__container{

@@ -1,34 +1,34 @@
-@use "../../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$footer-text-color: var(--color-blue);
-$footer-link-logo-dev: "../../../../assets/icons/logo-rosadev.png";
-$footer-link-logo-apoio: "../../../../assets/icons/logo-empower.svg?react";
-$footer-link-logo-ensino: "../../../../assets/icons/logo-vainaweb.svg?react";
+$footer-text-color: var(--c-blue);
+$footer-link-logo-dev:    "@/assets/icons/logo-rosadev.png";
+$footer-link-logo-apoio:  "@/assets/icons/logo-empower.svg?react";
+$footer-link-logo-ensino: "@/assets/icons/logo-vainaweb.svg?react";
 $logo-opacity: .85;
 $logo-opacity-transition: 1;
 
 .footer{
   &__areas{
-    @include flex-start-center;
-    gap: 3rem;
+    @include flex-center-start;
+    gap: var(--g-base);
   }
 
   &__area{
     @include flex-col-center;
-    gap: .4rem;
+    gap: var(--g-xs);
   }
 
   &__text{
-    font-family: var(--font-texts);
-    font-weight: var(--font-regular);
-    font-size: 1.2rem;
-    letter-spacing: .08rem;
-    line-height: 1.2;
     color: $footer-text-color;
+    font-family: var(--ff-texts);
+    font-size:   var(--fs-base);
+    font-weight: var(--fw-base);
+    letter-spacing: .1rem;
+    line-height: var(--lh-base);
   }
 
   &__logos{
-    @include flex-start-center;
+    @include flex-center-start;
   }
 
   &__link{
@@ -38,15 +38,15 @@ $logo-opacity-transition: 1;
     }
     &-dev{
       height: 2.8rem;
-      width: 4.6rem;
+      width:  4.6rem;
     }
     &-ensino{
       height: 3rem;
-      width: 4.4rem;
+      width:  4.4rem;
     }
     &-apoio{
       height: 2.5rem;
-      width: 8.2rem;
+      width:  8.2rem;
     }
   }
 
@@ -54,16 +54,25 @@ $logo-opacity-transition: 1;
     &-dev,
     &-ensino,
     &-apoio{
-      @include hover-transition-opacity($logo-opacity, $logo-opacity-transition);
+      @include hover-transition-opacity(
+        $logo-opacity,
+        $logo-opacity-transition
+      );
     }
     &-dev{
-      @include image-replacement($footer-link-logo-dev);
+      @include image-replacement(
+        $footer-link-logo-dev
+      );
     }
     &-ensino{
-      @include image-replacement($footer-link-logo-ensino);
+      @include image-replacement(
+        $footer-link-logo-ensino
+      );
     }
     &-apoio{
-      @include image-replacement($footer-link-logo-apoio);
+      @include image-replacement(
+        $footer-link-logo-apoio
+      );
     }
   }
 }

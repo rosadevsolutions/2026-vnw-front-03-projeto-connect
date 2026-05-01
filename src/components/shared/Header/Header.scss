@@ -1,6 +1,6 @@
-@use "../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$header-wrapper-background: var(--color-blue);
+$header-wrapper-background: var(--c-blue);
 $header-wrapper-height: 8.5rem;
 
 .header{
@@ -8,11 +8,15 @@ $header-wrapper-height: 8.5rem;
     @include wrapper;
     @include flex-center-center;
     background-color: $header-wrapper-background;
-    height: $header-wrapper-height;
     box-shadow: 0 .2rem .8rem rgba(0, 0, 0, .5);
+    height: $header-wrapper-height;
   }
 
   &__container{
     @include container;
+    @media only screen and (max-width: 400px){
+      @include flex-col-center;
+      max-width: 100%;
+    }
   }
 }

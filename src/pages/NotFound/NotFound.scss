@@ -1,7 +1,7 @@
-@use "../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$error-link-color: var(--color-blue);
-$error-link-hover-color: var(--color-red);
+$error-link-color: var(--c-blue);
+$error-link-color-hover: var(--c-red);
 
 
 .notFound{
@@ -20,27 +20,31 @@ $error-link-hover-color: var(--color-red);
     @include flex-col-center;
   }
 
+  &__title,
+  &__subtitle{
+    color: var(--c-gray-d);
+  }
+
+
   &__title{
-    font-family: var(--font-base);
-    color: var(--color-black);
-    font-size: 24rem;
-    line-height: 1;
-    opacity: .5;
+    font-family: var(--ff-base);
+    font-size:   var(--fs-t-error);
   }
 
   &__subtitle{
-    font-family: var(--font-texts);
-    font-weight: var(--font-semibold);
-    color: var(--color-black);
-    font-size: 2.4rem;
+    font-family:   var(--ff-texts);
+    font-size:     var(--fs-lg);
+    font-weight:   var(--fw-semi);
     margin-bottom: 4rem;
-    opacity: .4;
   }
 
   &__link{
-    @include hover-transition-color($error-link-color, $error-link-hover-color);
-    font-family: var(--font-texts);
-    font-weight: var(--font-regular);
-    font-size: 2rem;
+    @include hover-transition-color(
+      $error-link-color,
+      $error-link-color-hover
+    );
+    font-family: var(--ff-texts);
+    font-size:   var(--fs-md);
+    font-weight: var(--fw-base);
   }
 }

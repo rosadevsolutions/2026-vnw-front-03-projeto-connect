@@ -1,15 +1,35 @@
 :root {
-  --font-base: 'Source Sans 3', sans-serif;
-  --font-texts: 'Helvetica', Arial, sans-serif;
-  --font-xs: 1.6rem;
-  --font-sm: 2.4rem;
-  --font-md: 3rem;
-  --font-lg: 6rem;
-  --font-xlg: 9rem;
+  --ff-base: 'Source Sans 3', sans-serif;
+  --ff-texts: 'Helvetica', Arial, sans-serif;
 
-  --font-regular: 400;
-  --font-semibold: 600;
-  --font-bold: 700;
+  --fs-base: 1.2rem;
+  --fs-xs:   1.4rem;
+  --fs-sm:   1.6rem;
+  --fs-md:   2rem;
+  --fs-lg:   2.4rem;
+  --fs-xl:   3rem;
+  --fs-2xl:  4rem;
+  --fs-3xl:  5.6rem;
+  --fs-4xl:  7.6rem;
+  --fs-t-home: 56rem;
+  --fs-t-error: 24rem;
 
-  --line-base: 1.5;
+  --fw-base: 400;
+  --fw-semi: 600;
+  --fw-bold: 700;
+
+  --ta-c: center;
+  --ta-l: left;
+  --ta-r: right;
+
+  --lh-base: 1.2;
+  --lh-xs:   1;
+  --lh-sm:   1.4;
+
+  --ls-base: .02rem;
+  --ls-xs:   .05rem;
+  --ls-sm:   .08rem;
+  --ls-md:   .15rem;
+
+  --ts-base: 0 .3rem .05rem rgba(0, 0, 0, .15);
 }

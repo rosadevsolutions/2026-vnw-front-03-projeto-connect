@@ -1,48 +1,65 @@
 $content-max-width: 1240px;
 
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+}
+
 @mixin flex-center-center{
-  display: flex;
+  @include flex-center;
   justify-content: center;
-  align-items: center;
 }
 
-@mixin flex-between-center{
-  display: flex;
+@mixin flex-center-between{
+  @include flex-center;
   justify-content: space-between;
-  align-items: center;
 }
 
-@mixin flex-start-center{
-  display: flex;
+@mixin flex-center-start{
+  @include flex-center;
   justify-content: flex-start;
-  align-items: center;
 }
 
-@mixin flex-around-center{
-  display: flex;
+@mixin flex-center-around{
+  @include flex-center;
   justify-content: space-around;
-  align-items: center;
 }
 
-@mixin flex-col-start{
+@mixin flex-col{
   display: flex;
   flex-direction: column;
+}
+
+
+@mixin flex-col-start{
+  @include flex-col;
   align-items: flex-start;
 }
 
+@mixin flex-col-start-between{
+  @include flex-col-start;
+  justify-content: space-between;
+}
+
 @mixin flex-col-center{
-  display: flex;
-  flex-direction: column;
+  @include flex-col;
   align-items: center;
 }
 
+@mixin flex-col-center-between{
+  @include flex-col-center;
+  justify-content: space-between;
+}
+
 @mixin flex-col-end{
-  display: flex;
-  flex-direction: column;
+  @include flex-col;
   align-items: flex-end;
 }
 
-@mixin hover-transition-color($link-color,$link-color-transition) {
+@mixin hover-transition-color(
+  $link-color,
+  $link-color-transition
+) {
   color: $link-color;
   transition: color .3s ease;
   &:hover{
@@ -50,7 +67,10 @@ $content-max-width: 1240px;
   }
 }
 
-@mixin hover-transition-bg($button-bg,$button-bg-transition) {
+@mixin hover-transition-bg(
+  $button-bg,
+  $button-bg-transition
+) {
   background-color: $button-bg;
   transition: background-color .3s ease;
   &:hover{
@@ -58,7 +78,10 @@ $content-max-width: 1240px;
   }
 }
 
-@mixin hover-transition-opacity($logo-opacity,$logo-opacity-transition) {
+@mixin hover-transition-opacity(
+  $logo-opacity,
+  $logo-opacity-transition
+) {
   opacity: $logo-opacity;
   transition: opacity .3s ease;
   &:hover{
@@ -67,15 +90,15 @@ $content-max-width: 1240px;
 }
 
 @mixin image-replacement($img-url) {
-  display: block;
   background-image: url('#{$img-url}');
-  background-size: contain;
-  width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 100%;
+  overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden;
+  width: 100%;
 }
 
 @mixin wrapper{
@@ -84,21 +107,26 @@ $content-max-width: 1240px;
 }
 
 @mixin container{
-  @include flex-between-center;
-  width: 100vw;
-  max-width: $content-max-width;
+  @include flex-center-between;
   height: 100%;
   margin: 0 auto;
+  max-width: $content-max-width;
   padding: 0 4rem;
+  width: 100vw;
 }
 
-@mixin link-style($color, $color-hover, $font-size, $font-weight) {
-  text-decoration: none;
-  transition: color .3s ease;
+@mixin link-style(
+  $color,
+  $color-hover,
+  $font-size,
+  $font-weight
+) {
   font-size: $font-size;
   font-weight: $font-weight;
-  color: $color;
+  text-decoration: none;
 
+  color: $color;
+  transition: color .3s ease;
   &:hover {
     color: $color-hover;
   }

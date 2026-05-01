@@ -1,5 +1,5 @@
 import "./ButtonRegister.scss"
-import IconArrow from "../../../assets/icons/icon-arrow.svg?react";
+import IconArrow from "@/assets/icons/icon-arrow.svg?react";
 
 export default function ButtonRegister() {
   const handleClick = () => {

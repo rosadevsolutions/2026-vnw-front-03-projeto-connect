@@ -1,4 +1,4 @@
-@use "../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
 .home{
   &__wrapper{
@@ -11,19 +11,17 @@
   }
 
   &__content{
-    @include flex-col-start;
-    justify-content: space-between;
+    @include flex-col-start-between;
     height: 60rem;
     padding-top: 10rem;
 
     &--top{
-      @include flex-col-start;
-      justify-content: space-between;
+      @include flex-col-start-between;
       height: 36rem;
     }
 
     &--bottom{
-      @include flex-between-center;
+      @include flex-center-between;
       width: 100%;
     }
   }

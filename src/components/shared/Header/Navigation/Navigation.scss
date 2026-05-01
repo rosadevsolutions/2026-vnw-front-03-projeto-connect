@@ -1,26 +1,29 @@
-@use "../../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
-$navigation-link-color: var(--color-white);
-$navigation-link-hover-color: var(--color-red);
-$navigation-link-text-size: 2rem;
-$navigation-link-text-weight: var(--font-regular);
+$nav-color:   var(--c-white);
+$nav-color-h: var(--c-red);
+$nav-size:    var(--fs-md);
+$nav-weight:  var(--fw-base);
 
 .navigation{
   &__wrapper{
-    @include flex-between-center;
-    width: 76rem;
+    @include flex-center-between;
+    gap: var(--g-sm);
     height: 4rem;
-    gap: 4rem;
+    width: 76rem;
   }
 
   &__link{
-    @include hover-transition-color($navigation-link-color, $navigation-link-hover-color);
+    @include hover-transition-color(
+      $nav-color,
+      $nav-color-h
+    );
   }
 
   &__text{
-    font-family: var(--font-base);
-    font-size: $navigation-link-text-size;
-    font-weight: $navigation-link-text-weight;
-    letter-spacing: .15rem;
+    font-family: var(--ff-base);
+    font-size: $nav-size;
+    font-weight: $nav-weight;
+    letter-spacing: var(--ls-md);
   }
 }

@@ -1,8 +1,8 @@
 import './PerfilUsuario.scss';
-import ImageUser from "../../assets/images/user-thumbnail.png";
-import IconCursor from "../../assets/icons/icon-cursor.svg?react";
-import IconEmail from "../../assets/icons/icon-email.svg?react";
-import IconCalendar from "../../assets/icons/icon-calendar.svg?react";
+import ImageUser from "@/assets/images/user-thumbnail.png";
+import IconCursor from "@/assets/icons/icon-cursor.svg?react";
+import IconEmail from "@/assets/icons/icon-email.svg?react";
+import IconCalendar from "@/assets/icons/icon-calendar.svg?react";
 
 function Mailto({ email, subject = "", body = "", children }) {
   const params =

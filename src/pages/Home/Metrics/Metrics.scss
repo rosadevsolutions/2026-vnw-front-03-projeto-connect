@@ -1,31 +1,30 @@
-@use "../../../styles/abstracts/mixins" as *;
+@use "@/styles/abstracts/mixins" as *;
 
 .home{
   &__metrics{
     &--item{
-      @include flex-col-center;
-      justify-content: space-between;
+      @include flex-col-center-between;
     }
 
     &--title,
     &--text{
-      letter-spacing: .01rem;
-      line-height: 1;
-      color: var(--color-blue);
+      color: var(--c-blue);
+      letter-spacing: var(--ls-base);
+      line-height:    var(--lh-xs);
     }
 
     &--title{
-      font-family: var(--font-base);
-      font-weight: var(--font-bold);
-      font-size: 5.6rem;
-      text-shadow: 0 .2rem .2rem rgba(0, 0, 0, .15);
+      font-family: var(--ff-base);
+      font-size:   var(--fs-3xl);
+      font-weight: var(--fw-bold);
+      text-shadow: var(--ts-base);
     }
 
     &--text{
-      font-family: var(--font-texts);
-      font-weight: var(--font-regular);
-      font-size: 1.6rem;
-      text-align: center;
+      font-family: var(--ff-texts);
+      font-size:   var(--fs-sm);
+      font-weight: var(--fw-base);
+      text-align:  var(--ta-c);
       width: 16rem;
     }
   }
