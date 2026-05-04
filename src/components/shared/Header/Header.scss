@@ -7,17 +7,17 @@ $header-wrapper-background: var(--c-blue);
     @include flex-center-center;
     background-color: $header-wrapper-background;
     box-shadow: 0 .2rem .8rem rgba(0, 0, 0, .5);
-    width: 100vw;
   }
 
   &__container{
-    @include flex-col-center;
+    @include flex-center-center;
+    width: 100%;
     gap: 1rem;
 
     @media only screen and (min-width: 480px){
       @include flex-center-between;
       width: 100%;
-      max-width: 1240px;
+      max-width: 124rem;
     }
   }
 }

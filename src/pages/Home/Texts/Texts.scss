@@ -5,15 +5,23 @@
     &--title,
     &--paragraph{
       color: var(--c-blue);
-      letter-spacing: var(--ls-base);
+      text-align: center;
+      @media screen and (min-width: 480px){
+        text-align: left;
+        letter-spacing: var(--ls-base);
+      }
     }
 
     &--title{
       font-family: var(--ff-base);
-      font-size:   var(--fs-4xl);
-      line-height: var(--lh-base);
+      font-size:   var(--fs-3xl);
       text-shadow: var(--ts-base);
-      width: 59rem;
+      width: 44rem;
+      @media screen and (min-width: 480px){
+        font-size:   var(--fs-4xl);
+        line-height: var(--lh-base);
+        width: 59rem;
+      }
     }
 
     &--paragraph{
