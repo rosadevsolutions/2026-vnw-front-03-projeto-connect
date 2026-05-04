@@ -14,6 +14,7 @@ html {
   font-optical-sizing: auto;
   font-size: 62.5%;
   font-style: normal;
+  width: 100vw;
 }
 
 /* Melhor renderização de texto */
@@ -25,7 +26,8 @@ body {
   font-size: 100%;
   line-height: var(--lh-xs);
   list-style-type: none;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   text-rendering: optimizeSpeed;
 
   /* Melhora renderização de fontes */
