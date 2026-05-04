@@ -2,15 +2,19 @@
 
 $nav-color:   var(--c-white);
 $nav-color-h: var(--c-red);
-$nav-size:    var(--fs-md);
+$nav-size:    var(--fs-xs);
+$nav-size-desktop: var(--fs-md);
 $nav-weight:  var(--fw-base);
 
 .navigation{
   &__wrapper{
     @include flex-center-between;
-    gap: var(--g-sm);
+    gap: var(--g-base);
     height: 4rem;
-    width: 76rem;
+    @media screen and (min-width: 480px){
+      @include flex-center-between;
+      gap: var(--g-sm);
+    }
   }
 
   &__link{
@@ -25,5 +29,9 @@ $nav-weight:  var(--fw-base);
     font-size: $nav-size;
     font-weight: $nav-weight;
     letter-spacing: var(--ls-md);
+
+    @media screen and (min-width: 480px){
+      $nav-size-desktop:var(--fs-md);
+    }
   }
 }

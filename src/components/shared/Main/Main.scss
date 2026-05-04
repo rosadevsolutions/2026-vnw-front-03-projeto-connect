@@ -1,11 +1,12 @@
-@use "@/styles/abstracts/mixins" as *;
+@use "../../../styles/abstracts/mixins" as *;
 
 .main{
   &__wrapper{
-    @include wrapper;
+    @include flex-center-center;
   }
 
   &__container{
-    @include container;
+    @include flex-center-between;
+    height: 100%;
   }
 }

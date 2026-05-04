@@ -1,22 +1,24 @@
 @use "@/styles/abstracts/mixins" as *;
 
 $header-wrapper-background: var(--c-blue);
-$header-wrapper-height: 8.5rem;
 
 .header{
   &__wrapper{
-    @include wrapper;
     @include flex-center-center;
     background-color: $header-wrapper-background;
     box-shadow: 0 .2rem .8rem rgba(0, 0, 0, .5);
-    height: $header-wrapper-height;
+    width: 100vw;
   }
 
   &__container{
-    @include container;
-    @media only screen and (max-width: 400px){
-      @include flex-col-center;
-      max-width: 100%;
+    @include flex-col-center;
+    gap: 1rem;
+
+    @media only screen and (min-width: 480px){
+      @include flex-center-between;
+      width: 100%;
+      max-width: 1440px;
+      padding: 0 4rem;
     }
   }
 }

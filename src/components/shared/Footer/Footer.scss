@@ -6,13 +6,10 @@ $footer-wrapper-bg: var(--c-gray);
   &__wrapper{
     @include wrapper;
     background-color: $footer-wrapper-bg;
-    bottom: 0;
-    position: fixed;
   }
 
   &__container{
     @include container;
-    height: 8rem;
     padding: 0 4rem;
   }
 }
