@@ -17,8 +17,7 @@ $header-wrapper-background: var(--c-blue);
     @media only screen and (min-width: 480px){
       @include flex-center-between;
       width: 100%;
-      max-width: 1440px;
-      padding: 0 4rem;
+      max-width: 1240px;
     }
   }
 }

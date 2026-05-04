@@ -4,12 +4,13 @@ $footer-wrapper-bg: var(--c-gray);
 
 .footer{
   &__wrapper{
-    @include wrapper;
+    @include flex-center-center;
     background-color: $footer-wrapper-bg;
   }
 
   &__container{
-    @include container;
-    padding: 0 4rem;
+    @include flex-center-between;
+    width: 100%;
+    max-width: 1240px;
   }
 }
