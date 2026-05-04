@@ -9,7 +9,7 @@ $nav-weight:  var(--fw-base);
 .navigation{
   &__wrapper{
     @include flex-center-center;
-    gap: var(--g-base);
+    gap: 1rem;
     height: 4rem;
 
     @media screen and (min-width: 480px){
