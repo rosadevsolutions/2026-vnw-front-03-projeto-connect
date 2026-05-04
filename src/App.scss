@@ -1,0 +1,10 @@
+.app{
+  &__wrapper{
+    display: grid;
+    grid-template-rows: 8.5rem 1fr 8rem;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+}
