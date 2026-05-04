@@ -1,8 +1,15 @@
 $content-max-width: 1240px;
 
 @mixin flex-center{
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-start{
+  align-items: start;
+  display: flex;
+  flex-direction: row;
 }
 
 @mixin flex-center-center{
@@ -25,6 +32,13 @@ $content-max-width: 1240px;
   justify-content: space-around;
 }
 
+@mixin flex-start-center{
+  @include flex-start;
+  justify-content: center;
+}
+
+
+
 @mixin flex-col{
   display: flex;
   flex-direction: column;
@@ -38,7 +52,7 @@ $content-max-width: 1240px;
 
 @mixin flex-col-start-between{
   @include flex-col-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 @mixin flex-col-center{
@@ -107,12 +121,16 @@ $content-max-width: 1240px;
 }
 
 @mixin container{
-  @include flex-center-between;
+  @include flex-col-center;
   height: 100%;
   margin: 0 auto;
-  max-width: $content-max-width;
-  padding: 0 4rem;
+  padding: 0 1rem;
   width: 100vw;
+  @media screen and (min-width: 480px){
+    @include flex-center-between;
+    max-width: $content-max-width;
+    padding: 0 4rem;
+  }
 }
 
 @mixin link-style(
