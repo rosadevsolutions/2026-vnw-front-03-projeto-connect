@@ -14,7 +14,8 @@ export default function Copyright() {
         </h5>
       </Link>
       <p className="footer__copyright--text">
-        &copy; 2026 - Vai na Web e EMpower | Todos os direitos reservados.<br/>Projeto destinado exclusivamente a fins educativos
+        &copy; 2026 - Vai na Web e EMpower | Todos os direitos reservados.<br/>
+        Projeto destinado exclusivamente a fins educativos
       </p>
     </div>
   )

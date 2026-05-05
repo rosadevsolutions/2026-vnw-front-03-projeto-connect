@@ -7,20 +7,20 @@
   }
 
   &__container{
-    @include flex-col-start;
-    gap: 1rem;
+    @include flex-col-center;
+    gap: 2rem;
     height: 100%;
 
     @media screen and (min-width: 480px){
-      @include flex-center-start;
+      @include flex-center-center;
       gap: 5rem
     }
   }
 
   &__content{
     @include flex-col-center-between;
-      gap: 5rem;
-      padding-top: 5rem;
+    gap: 6rem;
+    padding-top: 6rem;
     @media screen and (min-width: 480px){
       gap: 5rem;
       padding-top: 0;
@@ -29,7 +29,7 @@
     &--top{
       @include flex-col;
       align-items: center;
-      height: 30rem;
+      height: 25rem;
       justify-content: space-between;
       @media screen and (min-width: 480px){
         align-items: flex-start;

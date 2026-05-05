@@ -2,18 +2,22 @@
 
 $nav-color:   var(--c-white);
 $nav-color-h: var(--c-red);
-$nav-size:    var(--fs-sm);
-$nav-size-desktop: var(--fs-lg);
+$nav-size:    var(--fs-xs);
+$nav-size-desktop: var(--fs-md);
 $nav-weight:  var(--fw-base);
 
 .navigation{
   &__wrapper{
     @include flex-center-center;
-    gap: 1rem;
-    height: 4rem;
+    flex-wrap: wrap;
+    gap: var(--g-base);
+    width: 21rem;
+
 
     @media screen and (min-width: 480px){
+      flex-wrap: nowrap;
       gap: var(--g-md);
+      width: unset;
     }
   }
 
@@ -28,10 +32,11 @@ $nav-weight:  var(--fw-base);
     font-family: var(--ff-base);
     font-size: $nav-size;
     font-weight: $nav-weight;
-    letter-spacing: var(--ls-md);
+    letter-spacing: var(--ls-base);
 
     @media screen and (min-width: 480px){
-      $nav-size-desktop: var(--fs-lg);
+      font-size: $nav-size-desktop;
+      letter-spacing: var(--ls-md);
     }
   }
 }

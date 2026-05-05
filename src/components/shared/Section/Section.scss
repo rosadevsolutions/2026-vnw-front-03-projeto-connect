@@ -7,21 +7,36 @@
 
   &__container{
     @include flex-col-center;
-    gap: var(--g-md);
-    padding: 8rem 0;
+    padding: 3rem 0;
+    @media screen and (min-width: 480px){
+      padding: 8rem 0;
+      gap: var(--g-md);
+    }
   }
 
   &__title{
     color: var(--c-blue);
     font-family: var(--ff-base);
-    font-size:   var(--fs-3xl);
+    font-size:   var(--fs-2xl);
     font-weight: var(--fw-bold);
     text-shadow: var(--ts-base);
+    @media screen and (min-width: 480px){
+      padding: 8rem 0;
+      font-size:   var(--fs-3xl);
+      gap: var(--g-md);
+    }
   }
 
   &__card{
     &--list{
-      @include flex-center-center;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+
+      @media screen and (min-width: 480px){
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
   }
 }

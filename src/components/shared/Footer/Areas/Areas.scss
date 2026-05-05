@@ -10,7 +10,7 @@ $logo-opacity-transition: 1;
 .footer{
   &__areas{
     @include flex-center-center;
-    gap: 5rem;
+    gap: 4rem;
     order: 1;
 
     @media screen and (min-width: 480px){
@@ -28,13 +28,10 @@ $logo-opacity-transition: 1;
   &__text{
     color: $footer-text-color;
     font-family: var(--ff-texts);
-    font-size:   var(--fs-xs);
+    font-size:   var(--fs-base);
     font-weight: var(--fw-base);
     letter-spacing: .1rem;
     line-height: var(--lh-base);
-    @media screen and (min-width: 480px){
-      font-size:   var(--fs-base);
-    }
   }
 
   &__logos{
@@ -44,34 +41,19 @@ $logo-opacity-transition: 1;
   &__link{
     &-wrapper{
       @include flex-center-center;
-      height: 4rem;
-      @media screen and (min-width: 480px){
-        height: 3rem;
-      }
+      height: 3rem;
     }
     &-dev{
-      height: 4rem;
-      width:  6rem;
-      @media screen and (min-width: 480px){
-        height: 2.8rem;
-        width:  4.6rem;
-      }
+      height: 2.8rem;
+      width:  4.6rem;
     }
     &-ensino{
-      height: 4rem;
-      width:  6rem;
-      @media screen and (min-width: 480px){
-        height: 3rem;
-        width:  4.4rem;
-      }
+      height: 3rem;
+      width:  4.4rem;
     }
     &-apoio{
-      height: 3rem;
-      width:  10.2rem;
-      @media screen and (min-width: 480px){
-        height: 2.5rem;
-        width:  8.2rem;
-      }
+      height: 2.5rem;
+      width:  8.2rem;
     }
   }
 

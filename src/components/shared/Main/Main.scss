@@ -8,6 +8,8 @@
   &__container{
     @include flex-center-between;
     height: 100%;
-    max-width: 1240px;
+    @media screen and (min-width: 480px){
+      max-width: 124rem;
+    }
   }
 }

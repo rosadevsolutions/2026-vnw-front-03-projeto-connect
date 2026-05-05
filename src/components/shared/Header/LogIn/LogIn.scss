@@ -17,8 +17,12 @@ $login-menu-button-font-weight: var(--fw-bold);
   }
   &__image{
     &--container{
-      height: 5.4rem;
-      width:  5.4rem;
+      height: 4.5rem;
+      width:  4.5rem;
+      @media screen and (min-width: 480px){
+        height: 5.5rem;
+        width:  5.5rem;
+      }
     }
     &--thumbnail{
       border-radius: var(--br-img);

@@ -11,12 +11,11 @@ $footer-wrapper-bg: var(--c-gray);
   &__container{
     @include flex-col-center-between;
     width: 100%;
-    gap: 2rem;
+    gap: 3.5rem;
     flex-direction: column-reverse;
 
     @media screen and (min-width: 480px){
       @include flex-center-between;
-      gap: 3rem;
       max-width: 124rem;
     }
   }

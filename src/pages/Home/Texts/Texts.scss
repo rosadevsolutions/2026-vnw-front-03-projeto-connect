@@ -14,21 +14,26 @@
 
     &--title{
       font-family: var(--ff-base);
-      font-size:   var(--fs-3xl);
+      font-size:   var(--fs-2xl);
       text-shadow: var(--ts-base);
-      width: 44rem;
+      width: 34rem;
       @media screen and (min-width: 480px){
         font-size:   var(--fs-4xl);
         line-height: var(--lh-base);
-        width: 59rem;
+        width: 60rem;
       }
     }
 
     &--paragraph{
       font-family: var(--ff-texts);
-      font-size:   var(--fs-md);
+      font-size:   var(--fs-xs);
       line-height: var(--lh-sm);
-      width: 56rem;
+      width: 100%;
+      max-width: 38rem;
+      @media screen and (min-width: 480px){
+        font-size:   var(--fs-md);
+        max-width: 60rem;
+      }
     }
   }
 }

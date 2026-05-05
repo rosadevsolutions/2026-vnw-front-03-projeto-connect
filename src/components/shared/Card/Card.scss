@@ -1,4 +1,4 @@
-@use "@/styles/abstracts/mixins" as *;
+@use "../../../styles/abstracts/mixins" as *;
 
 $button-bg: var(--c-blue);
 $button-bg-hover: var(--c-red);
@@ -9,10 +9,17 @@ $card_text-color: var(--c-blue);
     @include flex-col-center;
     gap:     var(--g-base);
     height:  100%;
-    padding: 1rem 4rem;
+    padding: 5rem 1rem;
+    @media screen and (min-width: 480px){
+      padding: 1rem 4rem;
+    }
 
     &:not(:last-child){
-      border-right: .1rem solid var(--c-gray);
+      border-bottom: .1rem solid var(--c-gray);
+      @media screen and (min-width: 480px){
+        border-bottom: none;
+        border-right: .1rem solid var(--c-gray);
+      }
     }
   }
 

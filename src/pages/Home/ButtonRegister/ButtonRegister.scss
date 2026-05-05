@@ -3,9 +3,7 @@
 $button-bg: var(--c-red);
 $button-bg-transition: var(--c-blue);
 $button-color: var(--c-white);
-$button-width: 26rem;
-$button-height: 5.6rem;
-$button-font-size: var(--fs-md);
+
 
 .home{
   &__button{
@@ -14,11 +12,17 @@ $button-font-size: var(--fs-md);
     border-radius: var(--br-xs);
     box-shadow: .4rem .4rem .5rem rgba(0, 0, 0, 0.15);
     color: $button-color;
-    font-size: $button-font-size;
+    font-size:   var(--fs-sm);
     font-weight: var(--fw-semi);
     gap: var(--g-base);
-    height: $button-height;
-    width: $button-width;
+    height: 4.6rem;
+    width: 20rem;
+    @media screen and (min-width: 480px){
+      font-size: var(--fs-md);
+      height: 5.6rem;
+      max-width: 60rem;
+      width: 26rem;
+    }
 
     transition: all 0.6s ease 0s;
     -webkit-transition: all 0.6s ease 0s;

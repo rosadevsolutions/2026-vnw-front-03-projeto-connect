@@ -10,9 +10,8 @@ $header-wrapper-background: var(--c-blue);
   }
 
   &__container{
-    @include flex-center-center;
+    @include flex-center-around;
     width: 100%;
-    gap: 1rem;
 
     @media only screen and (min-width: 480px){
       @include flex-center-between;

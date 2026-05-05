@@ -9,9 +9,9 @@ $logo-opacity-transition: 1;
   &__copyright{
     &--wrapper{
       @include flex-center-start;
-      gap: var(--g-base);
       order: 1;
       @media screen and (min-width: 480px){
+        gap: var(--g-base);
         order: 2;
       }
     }
@@ -34,15 +34,13 @@ $logo-opacity-transition: 1;
     }
 
     &--text{
-      font-family:    var(--ff-texts);
-      font-weight:    var(--fw-regular);
-      font-size:      var(--fs-xs);
-      letter-spacing: var(--ls-base);
-      line-height:  var(--lh-sm);
       color: $footer-text-color;
-
+      font-family:    var(--ff-texts);
+      font-size:      var(--fs-base);
+      font-weight:    var(--fw-regular);
+      line-height:    var(--lh-sm);
       @media screen and (min-width: 480px){
-        font-size:    var(--fs-base);
+        letter-spacing: var(--ls-base);
       }
     }
   }

@@ -7,7 +7,7 @@ export default function Texts() {
         Projetos Sociais que transformam
       </h2>
       <p className="home__text--paragraph">
-        Conectamos sua empresa com projetos sociais impactantes.
+        Conectamos sua empresa com projetos sociais impactantes.<br/>
         Juntos, criamos mudanças reais na comunidade.
       </p>
     </>
