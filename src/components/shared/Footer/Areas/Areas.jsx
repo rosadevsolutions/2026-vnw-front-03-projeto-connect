@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { easeInOut, easeOut, motion } from "motion/react";
 import "./Areas.scss";
 
 const areas = [
@@ -32,9 +33,20 @@ export default function Areas() {
   return (
     <div className="footer__areas">
       {areas.map((area) => (
-        <div
+        <motion.div
           className="footer__area"
           key={area.id}
+          initial={{
+            y: 10,
+            opacity: -5
+          }}
+          animate={{
+            y: 0,
+            opacity: 1
+          }}
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ duration: 1}}
         >
           <p className="footer__text">
             {area.label}:
@@ -52,7 +64,7 @@ export default function Areas() {
               </h5>
             </Link>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

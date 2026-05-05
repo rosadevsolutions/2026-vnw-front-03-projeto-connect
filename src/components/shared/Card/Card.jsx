@@ -1,5 +1,6 @@
 import "./Card.scss"
 import { images } from "@/assets/images";
+import { motion } from "motion/react";
 
 export default function Card({
   children,
@@ -23,7 +24,23 @@ export default function Card({
 
 
   return (
-    <div className="card__wrapper">
+    <motion.div
+      className="card__wrapper"
+      initial={{
+        y: 20,
+        opacity: 0
+      }}
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.9 }}
+      transition={{
+        duration: .75,
+        ease: "easeInOut"
+      }}
+    >
       {isComposed ? (
         children
       ) : (
@@ -54,7 +71,7 @@ export default function Card({
           )}
         </>
       )}
-    </div>
+    </motion.div>
   );
 }
 

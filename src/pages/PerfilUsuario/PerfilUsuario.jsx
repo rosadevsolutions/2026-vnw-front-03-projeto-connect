@@ -1,4 +1,5 @@
 import './PerfilUsuario.scss';
+import { motion } from 'motion/react';
 import ImageUser from "@/assets/images/user-thumbnail.png";
 import IconCursor from "@/assets/icons/icon-cursor.svg?react";
 import IconEmail from "@/assets/icons/icon-email.svg?react";
@@ -48,15 +49,40 @@ export default function PerfilUsuario() {
     <section className="perfilUsuario__wrapper">
       <div className="perfilUsuario__container">
         <div className="perfilUsuario__content">
-          <div className="perfilUsuario__image--wrapper">
-            <img
+          <motion.div
+            className="perfilUsuario__image--wrapper"
+            initial={{ x: -20 }}
+            animate={{ x: 0 }}
+            transition={{
+              duration: 1,
+              ease: "easeOut"
+            }}
+          >
+            <motion.img
               className="perfilUsuario__image--thumbnail"
               src={ImageUser}
               alt="foto do usuario"
+              initial={{ opacity: .5 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
             />
-          </div>
+          </motion.div>
 
-          <div className="perfilUsuario__infos--wrapper">
+          <motion.div
+            className="perfilUsuario__infos--wrapper"
+            initial={{
+              x: 40,
+              opacity: 0
+            }}
+            animate={{
+              x: 0,
+              opacity: 1
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeOut"
+            }}
+          >
             <h5 className="perfilUsuario__infos--user">Romulo Rosa</h5>
 
             <p className="perfilUsuario__infos--position">
@@ -85,7 +111,7 @@ export default function PerfilUsuario() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
