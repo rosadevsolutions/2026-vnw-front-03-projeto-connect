@@ -17,6 +17,30 @@ Builder: [Vite](https://vite.dev/)
 
 ---
 
+## Pacotes de Dependências / Libraries JS Utilizadas
+Criação e Administração de Rotas: [react-router-dom](https://www.npmjs.com/package/react-router-dom)<br>
+Animações e Efeitos de Transições: [motion](https://www.npmjs.com/package/motion)<br>
+Facilitador no Uso de arquivos .svg com Vite: [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr)<br>
+Lib do pré-processador de estilo: [sass](https://www.npmjs.com/package/sass)<br>
+Lib do pré-processador de estilo [sass-embeded](https://www.npmjs.com/package/sass-embedded)
+
+---
+
+## .editortconfig
+Arquivo informando os padrões de formatação utilizados no desenvolvimento do projeto.
+
+---
+
+## .nvmc
+Arquivo informando a versão de node utilizada no desenvolvimento do projeto.
+
+---
+
+## extensions.json
+Arquivo informando as extensões utilizadas com o VS Code durante o desenvolvimento do projeto.
+
+---
+
 ### Instalação e Inicialização do Projeto
 Através do terminal de sua escolha:
 1) Download/Clonar o projeto para o seu dispositivo: [Repositório Remoto do Projeto](https://github.com/rosadevsolutions/2026-vnw-front-03-projeto-connect)
