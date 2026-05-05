@@ -7,7 +7,7 @@
 
 ## Tecnologias Utilizadas
 Linguagem de Programação: [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)<br>
-Framework JS: [React](https://react.dev/)<br>
+Library JS Principal: [React](https://react.dev/)<br>
 Pré-processador CSS: [Sass](https://sass-lang.com/)<br>
 Ambiente de Execução: [Node JS](https://nodejs.org/pt-br)<br>
 Gerenciador de Dependências de Desenvolvimento: [NPM](https://www.npmjs.com/)<br>
@@ -19,14 +19,14 @@ Builder: [Vite](https://vite.dev/)
 
 ## Pacotes de Dependências / Libraries JS Utilizadas
 Criação e Administração de Rotas: [react-router-dom](https://www.npmjs.com/package/react-router-dom)<br>
-Animações e Efeitos de Transições: [motion](https://www.npmjs.com/package/motion)<br>
-Facilitador no Uso de arquivos .svg com Vite: [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr)<br>
 Lib do pré-processador de estilo: [sass](https://www.npmjs.com/package/sass)<br>
-Lib do pré-processador de estilo [sass-embeded](https://www.npmjs.com/package/sass-embedded)
+Lib do pré-processador de estilo [sass-embeded](https://www.npmjs.com/package/sass-embedded)<br>
+Animações e Efeitos de Transições: [motion](https://www.npmjs.com/package/motion)<br>
+Facilitador no Uso de arquivos .svg com Vite: [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr)
 
 ---
 
-## .editortconfig
+## .editorconfig
 Arquivo informando os padrões de formatação utilizados no desenvolvimento do projeto.
 
 ---
